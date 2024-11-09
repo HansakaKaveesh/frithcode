@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import project1 from '../../public/About.png';
 import project2 from '../../public/About.png';
 import project3 from '../../public/About.png';

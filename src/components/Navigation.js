@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from "../components/ui/button";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { useState } from "react";
 
 export default function Navigation() {
@@ -14,8 +14,8 @@ export default function Navigation() {
                 <Image 
                     src="/Frithcode.png" // Path relative to the public folder
                     alt="FrithCode Logo" 
-                    width={70} 
-                    height={40} 
+                    width={110} 
+                    height={30} 
                     className="h-auto w-auto"
                 />
             </div>
