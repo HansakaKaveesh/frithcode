@@ -14,8 +14,8 @@ export default function Navigation() {
                 <Image 
                     src="/Frithcode.png" // Path relative to the public folder
                     alt="FrithCode Logo" 
-                    width={110} 
-                    height={30} 
+                    width={120} 
+                    height={34} 
                     className="h-auto w-auto"
                 />
             </div>
