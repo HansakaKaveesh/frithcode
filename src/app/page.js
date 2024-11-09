@@ -2,18 +2,18 @@
 import Navigation from "../components/Navigation";
 import Hero from "../components/Hero";
 import About from "../components/About";
-
+import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 
 export default function HomePage() {
     return (
         <div>
-            
-            <Hero />
+           <Hero />
             <Navigation />
-            <About />
             
+            <About />
+            <Services />
             <Portfolio />
             <Footer />
         </div>
