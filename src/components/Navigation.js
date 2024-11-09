@@ -52,7 +52,7 @@ export default function Navigation() {
                     <li className="text-gray-700 hover:text-blue-600">Services</li>
                     <li className="text-gray-700 hover:text-blue-600">Portfolio</li>
                     <li className="text-gray-700 hover:text-blue-600">Contact Us</li>
-                    <Button  variant="outline">Request a quotation</Button>
+                    <Button variant="outline">Request a quotation</Button>
                 </ul>
             )}
         </nav>
