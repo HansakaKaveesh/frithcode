@@ -26,10 +26,10 @@ export default function Testimonials() {
     ];
 
     return (
-        <section className="py-16 px-8 bg-white">
+        <section className="py-16 px-8 bg-white dark:bg-gray-900">
             <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold">Words from Our Clients</h2>
-                <p className="text-gray-600 mt-4 max-w-xl mx-auto">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Words from Our Clients</h2>
+                <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-xl mx-auto">
                     See what our clients have to say about working with us. We’re proud to have made a difference for these amazing people.
                 </p>
             </div>
@@ -37,7 +37,7 @@ export default function Testimonials() {
                 {testimonials.map((testimonial) => (
                     <div
                         key={testimonial.id}
-                        className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                        className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                     >
                         <div className="flex flex-col items-center text-center">
                             <div className="relative w-24 h-24 mb-4">
@@ -49,8 +49,8 @@ export default function Testimonials() {
                                     className="rounded-full"
                                 />
                             </div>
-                            <h3 className="text-xl font-semibold">{testimonial.name}</h3>
-                            <p className="text-gray-600 mt-3">{testimonial.feedback}</p>
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{testimonial.name}</h3>
+                            <p className="text-gray-600 dark:text-gray-400 mt-3">{testimonial.feedback}</p>
                         </div>
                     </div>
                 ))}

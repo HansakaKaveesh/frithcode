@@ -26,10 +26,10 @@ export default function RecentProjects() {
     ];
 
     return (
-        <section className="py-16 px-8 bg-gray-50">
+        <section className="py-16 px-8 bg-gray-50 dark:bg-gray-900">
             <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold">Our Recent Projects</h2>
-                <p className="text-gray-600 mt-4 max-w-xl mx-auto">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Our Recent Projects</h2>
+                <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-xl mx-auto">
                     Take a look at some of the projects we’ve completed, showcasing our expertise and commitment to quality.
                 </p>
             </div>
@@ -37,7 +37,7 @@ export default function RecentProjects() {
                 {projects.map((project) => (
                     <div
                         key={project.id}
-                        className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                        className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                     >
                         <div className="relative w-full h-48">
                             <Image
@@ -49,8 +49,8 @@ export default function RecentProjects() {
                             />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                            <p className="text-gray-600">{project.description}</p>
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
+                            <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
                         </div>
                     </div>
                 ))}
