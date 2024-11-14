@@ -2,7 +2,7 @@ import React from 'react';
 
 const WebDevelopmentServices = () => {
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-800">
+    <section className="py-16 px-8 bg-gray-100 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-800 mb-8 dark:text-gray-200 sm:text-5xl md:text-3xl">
           Our Web Development Services
@@ -12,7 +12,7 @@ const WebDevelopmentServices = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 dark:bg-gray-700 dark:text-gray-200">
+          <div className="bg-white shadow-lg rounded-lg p-6 max-w-xs mx-auto hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 dark:bg-gray-700 dark:text-gray-200">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 dark:text-gray-100 sm:text-3xl">
               Custom Web Design
             </h3>
@@ -21,7 +21,7 @@ const WebDevelopmentServices = () => {
             </p>
           </div>
           {/* Service 2 */}
-          <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 dark:bg-gray-700 dark:text-gray-200">
+          <div className="bg-white shadow-lg rounded-lg p-6 max-w-xs mx-auto hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 dark:bg-gray-700 dark:text-gray-200">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 dark:text-gray-100 sm:text-3xl">
               E-Commerce Solutions
             </h3>
@@ -30,7 +30,7 @@ const WebDevelopmentServices = () => {
             </p>
           </div>
           {/* Service 3 */}
-          <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 dark:bg-gray-700 dark:text-gray-200">
+          <div className="bg-white shadow-lg rounded-lg p-6 max-w-xs mx-auto hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 dark:bg-gray-700 dark:text-gray-200">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 dark:text-gray-100 sm:text-3xl">
               SEO Optimization
             </h3>
