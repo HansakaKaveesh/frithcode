@@ -14,7 +14,7 @@ export default function HomePage() {
             <Navigation />
             
             <About />
-            
+            <Services />
             <Portfolio />
             <Testimonials/>
             <Footer />
