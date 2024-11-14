@@ -1,65 +1,32 @@
-export default function Services() {
+// src/components/WebDevelopmentServices.js
+import React from 'react';
+
+const WebDevelopmentServices = () => {
   return (
-    <section className="bg-gray-50 py-16 px-6 sm:px-8 md:px-10 dark:bg-gray-800">
-      <div className="max-w-screen-xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
-          Our Web Development Services
-        </h2>
-        <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-xl mx-auto mb-12">
-          We provide innovative and custom web solutions to meet your business needs.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-700 dark:text-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 sm:text-3xl dark:text-gray-100">
-              Custom Web Design
-            </h3>
-            <p className="text-gray-600 sm:text-lg dark:text-gray-400">
-              Tailored web design services to give your business a unique online presence.
-            </p>
+    <section className="py-16 bg-gray-100">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-gray-800 mb-8">Our Web Development Services</h2>
+        <p className="text-lg text-gray-600 mb-12">We offer a range of web development services to help your business grow online.</p>
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Service 1 */}
+          <div className="bg-white shadow-lg rounded-lg p-8">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Custom Web Design</h3>
+            <p className="text-gray-600">We create responsive and user-friendly web designs tailored to your brand and needs.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-700 dark:text-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 sm:text-3xl dark:text-gray-100">
-              E-Commerce Solutions
-            </h3>
-            <p className="text-gray-600 sm:text-lg dark:text-gray-400">
-              Build your online store with intuitive design and seamless user experience.
-            </p>
+          {/* Service 2 */}
+          <div className="bg-white shadow-lg rounded-lg p-8">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">E-Commerce Solutions</h3>
+            <p className="text-gray-600">We build secure and scalable e-commerce platforms for businesses of all sizes.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-700 dark:text-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 sm:text-3xl dark:text-gray-100">
-              SEO Optimization
-            </h3>
-            <p className="text-gray-600 sm:text-lg dark:text-gray-400">
-              Increase your website's visibility and ranking on search engines.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-700 dark:text-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 sm:text-3xl dark:text-gray-100">
-              Web App Development
-            </h3>
-            <p className="text-gray-600 sm:text-lg dark:text-gray-400">
-              Custom web applications built for performance and scalability.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-700 dark:text-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 sm:text-3xl dark:text-gray-100">
-              UX/UI Design
-            </h3>
-            <p className="text-gray-600 sm:text-lg dark:text-gray-400">
-              Create engaging and intuitive user interfaces for your web applications.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-700 dark:text-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 sm:text-3xl dark:text-gray-100">
-              Mobile-Friendly Websites
-            </h3>
-            <p className="text-gray-600 sm:text-lg dark:text-gray-400">
-              Ensure your website looks great and functions smoothly on all devices.
-            </p>
+          {/* Service 3 */}
+          <div className="bg-white shadow-lg rounded-lg p-8">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">SEO Optimization</h3>
+            <p className="text-gray-600">We optimize your website to rank higher in search engines and drive more traffic.</p>
           </div>
         </div>
       </div>
     </section>
   );
-  }
-  
+};
+
+export default WebDevelopmentServices;
