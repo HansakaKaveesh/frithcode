@@ -1,4 +1,4 @@
-export default function Services(){
+export default function Services() {
   return (
     <section className="bg-gray-50 py-16 px-6 sm:px-8 md:px-10 dark:bg-gray-800">
       <div className="max-w-screen-xl mx-auto text-center">
@@ -61,6 +61,5 @@ export default function Services(){
       </div>
     </section>
   );
-};
-
-
+  }
+  
