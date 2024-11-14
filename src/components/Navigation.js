@@ -22,7 +22,7 @@ export default function Navigation() {
             </div>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-6">
+            <ul className="hidden md:flex gap-6 cursor-pointer" >
     <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
         Home
     </li>
@@ -59,8 +59,8 @@ export default function Navigation() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-center gap-4 py-4 md:hidden ">
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md ">
                     Home
                 </li>
                 <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
