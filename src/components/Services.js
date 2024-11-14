@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Services(){
   return (
     <section className="bg-gray-50 py-16 px-6 sm:px-8 md:px-10 dark:bg-gray-800">
