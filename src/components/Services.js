@@ -4,10 +4,10 @@ const ServicesSection = () => {
   return (
     <section className="bg-gray-50 py-16 px-6 sm:px-8 md:px-10 dark:bg-gray-800">
       <div className="max-w-screen-xl mx-auto text-center">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-8 sm:text-5xl md:text-6xl dark:text-gray-200">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
           Our Web Development Services
         </h2>
-        <p className="text-lg text-gray-600 mb-12 sm:text-xl md:text-2xl dark:text-gray-400">
+        <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-xl mx-auto mb-12">
           We provide innovative and custom web solutions to meet your business needs.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
