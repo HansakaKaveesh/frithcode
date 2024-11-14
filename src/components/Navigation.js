@@ -23,12 +23,22 @@ export default function Navigation() {
 
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-6">
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Home</li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">About Us</li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Services</li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Portfolio</li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Contact Us</li>
-            </ul>
+    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+        Home
+    </li>
+    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+        About Us
+    </li>
+    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+        Services
+    </li>
+    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+        Portfolio
+    </li>
+    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+        Contact Us
+    </li>
+</ul>
 
             {/* Desktop Button and Theme Toggle */}
             <div className="hidden md:flex items-center gap-4">
@@ -50,13 +60,23 @@ export default function Navigation() {
             {/* Mobile Menu */}
             {isOpen && (
                 <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Home</li>
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">About Us</li>
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Services</li>
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Portfolio</li>
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600">Contact Us</li>
-                    <Button variant="outline">Request a quotation</Button>
-                </ul>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Home
+                </li>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    About Us
+                </li>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Services
+                </li>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Portfolio
+                </li>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Contact Us
+                </li>
+                <Button variant="outline">Request a quotation</Button>
+            </ul>
             )}
         </nav>
     );
