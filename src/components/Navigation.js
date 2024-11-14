@@ -13,9 +13,9 @@ export default function Navigation() {
             {/* Logo */}
             <div className="flex items-center">
                 <Image 
-                    src="/Frithcode.png" // Path relative to the public folder
+                    src="/Frithcode2.png" // Path relative to the public folder
                     alt="FrithCode Logo" 
-                    width={120} 
+                    width={125} 
                     height={34} 
                     className="h-auto w-auto"
                 />
