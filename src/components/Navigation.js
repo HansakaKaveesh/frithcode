@@ -6,7 +6,9 @@ import { useState } from "react";
 import ThemeToggle from "./ThemeToggle"; // Import the ThemeToggle component
 
 export default function Navigation() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false); // For mobile menu
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false); // For desktop Services dropdown
+    const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false); // For mobile Services dropdown
 
     return (
         <nav className="flex items-center justify-between p-4 bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 right-0 z-10">
@@ -22,23 +24,35 @@ export default function Navigation() {
             </div>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-6 cursor-pointer" >
-    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-        Home
-    </li>
-    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-        About Us
-    </li>
-    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-        Services
-    </li>
-    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-        Portfolio
-    </li>
-    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-        Contact Us
-    </li>
-</ul>
+            <ul className="hidden md:flex gap-6 cursor-pointer">
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Home
+                </li>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    About Us
+                </li>
+                <li 
+                    className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md"
+                    onMouseEnter={() => setIsDropdownOpen(true)}
+                    onMouseLeave={() => setIsDropdownOpen(false)}
+                >
+                    Services
+                    {/* Dropdown for Services */}
+                    {isDropdownOpen && (
+                        <ul className="absolute left-0 top-12 bg-white dark:bg-gray-800 shadow-md rounded-md">
+                            <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">Web Development</li>
+                            <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">App Development</li>
+                            <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">SEO Optimization</li>
+                        </ul>
+                    )}
+                </li>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Portfolio
+                </li>
+                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Contact Us
+                </li>
+            </ul>
 
             {/* Desktop Button and Theme Toggle */}
             <div className="hidden md:flex items-center gap-4">
@@ -47,7 +61,7 @@ export default function Navigation() {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-2"> {/* Added gap-2 to space out items */}
+            <div className="md:hidden flex items-center gap-2">
                 <ThemeToggle /> {/* Add ThemeToggle in mobile view */}
                 <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 dark:text-gray-300 focus:outline-none">
                     {/* Hamburger Icon */}
@@ -59,24 +73,32 @@ export default function Navigation() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-center gap-4 py-4 md:hidden ">
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md ">
-                    Home
-                </li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    About Us
-                </li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    Services
-                </li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    Portfolio
-                </li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    Contact Us
-                </li>
-                <Button variant="outline">Request a quotation</Button>
-            </ul>
+                <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
+                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        Home
+                    </li>
+                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        About Us
+                    </li>
+                    <li className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        <div onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}>Services</div>
+                        {/* Mobile Dropdown for Services */}
+                        {isMobileDropdownOpen && (
+                            <ul className="mt-2 bg-white dark:bg-gray-800 shadow-md rounded-md w-40">
+                                <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">Web Development</li>
+                                <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">App Development</li>
+                                <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">SEO Optimization</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        Portfolio
+                    </li>
+                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        Contact Us
+                    </li>
+                    <Button variant="outline">Request a quotation</Button>
+                </ul>
             )}
         </nav>
     );
