@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "FrithCode",
+  title: "FrithCode Technologies ",
   description: "FrithCode offers innovative web development solutions tailored to your business needs",
 };
 
@@ -24,6 +26,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Navigation/>
+        <Footer/>
       </body>
     </html>
   );
