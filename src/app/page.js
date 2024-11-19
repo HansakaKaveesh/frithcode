@@ -12,7 +12,6 @@ export default function HomePage() {
         <div>
            <Hero />
             <Navigation />
-            
             <About />
             <Services />
             <Portfolio />
