@@ -89,7 +89,7 @@ export default function Navigation() {
                         <Link href="/">Home</Link>
                     </li>
                     <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                        <Link href="/about">About Us</Link>
+                        <Link href="/about-us">About Us</Link>
                     </li>
                     <li className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
                         <div onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}>Services</div>
