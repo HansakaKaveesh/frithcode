@@ -1,5 +1,6 @@
 // src/components/Hero.js
 import { Button } from "../components/ui/button";
+import Link from 'next/link';
 
 export default function Hero() {
     return (
@@ -19,10 +20,10 @@ export default function Hero() {
                     FrithCode offers innovative web development solutions tailored to your business needs.
                 </p>
                 <div className="flex gap-4 mt-6 justify-center animate-fade-in-up delay-400">
-                    <Button className="text-black dark:text-white" variant="outline">
+                <Link href="about-us"><Button className="text-black dark:text-white" variant="outline">
                         Learn More
-                    </Button>
-                    <Button variant="destructive">Request a quotation</Button>
+                    </Button></Link>
+                    <Link href="/quotation"><Button variant="destructive">Request a quotation</Button></Link>
                 </div>
             </div>
         </section>
