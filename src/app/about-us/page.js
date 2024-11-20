@@ -4,7 +4,7 @@ import Link from 'next/link';
 const About = () => {
   return (
     <div className="bg-white dark:bg-gray-900">
-      {/* Hero Section */}
+      
       {/* Hero Section */}
 <div className="relative bg-blue-800 text-white dark:bg-blue-900">
   {/* Background Image */}

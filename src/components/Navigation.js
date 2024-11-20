@@ -117,7 +117,7 @@ export default function Navigation() {
                         <Link href="/portfolio">Portfolio</Link>
                     </li>
                     <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                        <Link href="/contact">Contact Us</Link>
+                        <Link href="/contact-us">Contact Us</Link>
                     </li>
                     <Link href="/quotation">
                         <Button variant="outline">Request a quotation</Button>
