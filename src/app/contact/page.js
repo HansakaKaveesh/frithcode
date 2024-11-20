@@ -23,12 +23,13 @@ export default function PortfolioPage() {
   <div className="relative container mx-auto min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] py-24 sm:py-28 md:py-36 lg:py-60 text-center flex flex-col justify-center">
     {/* Heading Animation */}
     <h1 className="text-3xl md:text-4xl font-bold text-white dark:text-gray-100 opacity-0 animate-fadeInUp">
-      Our Portfolio
+      Contact
     </h1>
     
     {/* Paragraph Animation */}
     <p className="mt-4 text-lg opacity-0 animate-fadeInUp delay-200">
-      Explore our innovative web solutions for businesses across the globe.
+    We'd love to hear from you! Feel free to reach out with any
+    inquiries or feedback..
     </p>
 
     {/* Breadcrumb Animation */}
@@ -36,7 +37,7 @@ export default function PortfolioPage() {
       <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
         Home
       </Link>{' '}
-      &gt; Portfolio
+      &gt; Contact
     </p>
   </div>
 </div>
