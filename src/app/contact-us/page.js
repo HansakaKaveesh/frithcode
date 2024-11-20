@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link';
 
-const ContactUs = () => {
+export default function ContactUs () {
   return (
     <div className="bg-white dark:bg-gray-900">
       {/* Hero Section */}
@@ -44,5 +44,3 @@ const ContactUs = () => {
     </div>
   );
 };
-
-export default ContactUs;
