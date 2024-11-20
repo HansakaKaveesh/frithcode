@@ -28,12 +28,14 @@ export default function Navigation() {
 
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-6 cursor-pointer">
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    <Link href="/">Home</Link>
-                </li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    <Link href="/about-us">About Us</Link>
-                </li>
+                <Link href="/"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Home</li>
+                </Link>
+                
+                <Link href="/about-us"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    About Us</li>
+                </Link>
+
                 <li 
                     className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md"
                     onMouseEnter={() => setIsDropdownOpen(true)}
@@ -43,24 +45,26 @@ export default function Navigation() {
                     {/* Dropdown for Services */}
                     {isDropdownOpen && (
                         <ul className="absolute left-0 top-10 bg-white dark:bg-gray-700 shadow-md rounded-md">
-                            <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                <Link href="/services/web-development">Web Development</Link>
-                            </li>
-                            <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                <Link href="/services/app-development">App Development</Link>
-                            </li>
-                            <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                <Link href="/services/seo-optimization">SEO Optimization</Link>
-                            </li>
+                            <Link href="/services/web-development"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
+                                Web Development</li>
+                            </Link>
+                            
+                            <Link href="/services/app-development"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
+                                App Development</li>
+                            </Link>
+
+                            <Link href="/services/seo-optimization"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
+                                SEO Optimization</li>
+                            </Link>
                         </ul>
                     )}
                 </li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    <Link href="/portfolio">Portfolio</Link>
-                </li>
-                <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                    <Link href="/contact-us">Contact Us</Link>
-                </li>
+                <Link href="/portfolio"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Portfolio</li>
+                </Link>
+                <Link href="/contact-us"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                    Contact Us</li>
+                </Link>
             </ul>
 
             {/* Desktop Button and Theme Toggle */}
@@ -85,9 +89,10 @@ export default function Navigation() {
             {/* Mobile Menu */}
             {isOpen && (
                 <ul className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                        <Link href="/">Home</Link>
-                    </li>
+                    <Link href="/"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        Home</li>
+                    </Link>
+                    
                     <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
                         <Link href="/about-us">About Us</Link>
                     </li>
