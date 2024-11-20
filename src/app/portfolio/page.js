@@ -47,39 +47,7 @@ export default function PortfolioPage() {
 
 
       {/* Testimonials Section */}
-<section className="py-16 bg-blue-50 dark:bg-gray-900">
-  <h2 className="text-4xl font-bold text-center text-blue-800 dark:text-gray-200 mb-12">
-    What Our Clients Say
-  </h2>
-  <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-    {[1, 2].map((testimonial) => (
-      <div
-        key={testimonial}
-        className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 text-center border border-gray-200 dark:border-gray-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-      >
-        {/* Quote Icon */}
-        <div className="text-blue-600 dark:text-blue-400 mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            className="w-10 h-10 mx-auto"
-            viewBox="0 0 24 24"
-          >
-            <path d="M10 9.5c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.09-1.64 3.8-3.73 3.97l-.27.02c-.82 0-1.56.5-1.88 1.27l-.37.9H14.5c-.83 0-1.5-.67-1.5-1.5V9.5zm-7 0C3 6.74 5.24 4.5 8 4.5s5 2.24 5 5c0 2.09-1.64 3.8-3.73 3.97l-.27.02c-.82 0-1.56.5-1.88 1.27l-.37.9H1.5C.67 15 0 14.33 0 13.5V9.5z"></path>
-          </svg>
-        </div>
-        {/* Testimonial Text */}
-        <p className="text-gray-600 dark:text-gray-300 italic leading-relaxed">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel dolor vel ipsum
-          placerat congue. Ut nec libero quis felis tincidunt pharetra."
-        </p>
-        {/* Client Info */}
-        <h3 className="mt-6 font-semibold text-blue-600 dark:text-blue-400 text-lg">- Client Name</h3>
-        <p className="text-gray-500 dark:text-gray-400">Company Name</p>
-      </div>
-    ))}
-  </div>
-</section>
+
 
 
 
