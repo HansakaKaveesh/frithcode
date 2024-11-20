@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 
@@ -22,12 +23,12 @@ export default function PortfolioPage() {
   <div className="relative container mx-auto min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] py-24 sm:py-28 md:py-36 lg:py-60 text-center flex flex-col justify-center">
     {/* Heading Animation */}
     <h1 className="text-3xl md:text-4xl font-bold text-white dark:text-gray-100 opacity-0 animate-fadeInUp">
-    Contact Us
+      Our Portfolio
     </h1>
     
     {/* Paragraph Animation */}
     <p className="mt-4 text-lg opacity-0 animate-fadeInUp delay-200">
-    We'd love to hear from you!
+      Explore our innovative web solutions for businesses across the globe.
     </p>
 
     {/* Breadcrumb Animation */}
@@ -35,13 +36,13 @@ export default function PortfolioPage() {
       <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
         Home
       </Link>{' '}
-      &gt; Contact Us
+      &gt; Portfolio
     </p>
   </div>
 </div>
 
 {/* Contact Form and Details */}
-<div className="container mx-auto py-10 px-4 md:px-0">
+      <div className="container mx-auto py-10 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Form */}
           <div className="bg-white p-8 rounded shadow">
@@ -131,7 +132,7 @@ export default function PortfolioPage() {
     Get in touch with us today to discuss your project and start building something great.
   </p>
   <button className="mt-6 px-6 sm:px-4 py-3 sm:py-2 bg-white text-blue-600 dark:bg-blue-800 dark:text-white font-semibold rounded-lg shadow-lg hover:bg-blue-500 hover:text-white dark:hover:bg-blue-700 transition-all">
-    Questions
+    Contact Us
   </button>
 </section>
     </main>
