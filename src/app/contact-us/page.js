@@ -1,8 +1,9 @@
+'use client';
 import React from "react";
-import Link from 'next/link';
 
 
-const ContactUs = () => {
+
+const Contact = () => {
     return (
         <div className="bg-gray-100 min-h-screen">
           {/* Hero Section */}
@@ -106,4 +107,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;
