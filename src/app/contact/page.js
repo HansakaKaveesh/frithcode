@@ -28,8 +28,8 @@ export default function PortfolioPage() {
     
     {/* Paragraph Animation */}
     <p className="mt-4 text-lg opacity-0 animate-fadeInUp delay-200">
-    We'd love to hear from you! Feel free to reach out with any
-    inquiries or feedback..
+    Feel free to reach out with any
+    inquiries or feedback.
     </p>
 
     {/* Breadcrumb Animation */}
@@ -37,7 +37,7 @@ export default function PortfolioPage() {
       <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
         Home
       </Link>{' '}
-      &gt; Contact
+      &gt; ContactUs
     </p>
   </div>
 </div>
