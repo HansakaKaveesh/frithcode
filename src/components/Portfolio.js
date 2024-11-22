@@ -51,7 +51,7 @@ export default function RecentProjects() {
                     <div
                         key={project.id}
                         className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
-                        data-aos="zoom-in"
+                        data-aos="fade-up"
                         data-aos-delay={`${index * 100}`}
                     >
                         <div className="relative w-full h-48">

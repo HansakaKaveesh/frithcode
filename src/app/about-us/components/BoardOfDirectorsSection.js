@@ -22,7 +22,7 @@ const BoardOfDirectorsSection = () => {
         {/* Director 1 */}
         <div
           className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 dark:bg-gray-800 dark:text-white"
-          data-aos="fade-right"
+          data-aos="fade-up"
         >
           <Image
             src="/Director1.jpg"
@@ -55,7 +55,7 @@ const BoardOfDirectorsSection = () => {
         {/* Director 3 */}
         <div
           className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 dark:bg-gray-800 dark:text-white"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <Image
             src="/Director2.jpg"

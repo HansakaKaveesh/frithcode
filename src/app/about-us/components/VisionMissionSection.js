@@ -21,7 +21,7 @@ const VisionMissionSection = () => {
           <div className="transform hover:scale-105 motion-safe:animate-fadeIn">
           <div
             className="bg-white shadow-lg p-8 rounded-lg transform hover:scale-105 transition-transform duration-300 dark:bg-gray-700 dark:text-white"
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             <h3 className="text-xl md:text-2xl font-bold text-blue-700 dark:text-blue-400 mb-6">Our Vision</h3>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed dark:text-gray-300">
@@ -35,7 +35,7 @@ const VisionMissionSection = () => {
           <div className="transform hover:scale-105 motion-safe:animate-fadeIn">
           <div
             className="bg-white shadow-lg p-8 rounded-lg transform hover:scale-105 transition-transform duration-300 dark:bg-gray-700 dark:text-white"
-            data-aos="fade-left"
+            data-aos="fade-up"
           >
             <h3 className="text-xl md:text-2xl font-bold text-blue-700 dark:text-blue-400 mb-6">Our Mission</h3>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed dark:text-gray-300">
