@@ -2,23 +2,27 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true); // Set to true for dark mode by default
 
   useEffect(() => {
+    // Check if there's a saved theme in localStorage, otherwise apply dark mode by default
     const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
+    if (theme === "dark" || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add("dark");
       setIsDarkMode(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setIsDarkMode(false);
     }
   }, []);
 
   const toggleTheme = () => {
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("theme", "light");
     } else {
       document.documentElement.classList.add("dark");
-     localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "dark");
     }
     setIsDarkMode(!isDarkMode);
   };
