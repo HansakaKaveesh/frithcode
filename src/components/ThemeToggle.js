@@ -15,10 +15,10 @@ export default function ThemeToggle() {
   const toggleTheme = () => {
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+     localStorage.setItem("theme", "light");
     }
     setIsDarkMode(!isDarkMode);
   };
