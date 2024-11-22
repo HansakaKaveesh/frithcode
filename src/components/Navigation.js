@@ -93,32 +93,39 @@ export default function Navigation() {
                         Home</li>
                     </Link>
                     
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                        <Link href="/about-us">About Us</Link>
-                    </li>
+                    <Link href="/about-us"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        About Us
+                    </li></Link>
+
                     <li className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
                         <div onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}>Services</div>
                         {/* Mobile Dropdown for Services */}
                         {isMobileDropdownOpen && (
                             <ul className="mt-2 bg-white dark:bg-gray-800 shadow-md rounded-md w-40">
-                                <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                    <Link href="/services/web-development">Web Development</Link>
-                                </li>
-                                <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                    <Link href="/services/app-development">App Development</Link>
-                                </li>
-                                <li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                    <Link href="/services/seo-optimization">SEO Optimization</Link>
-                                </li>
+                                <Link href="/services/web-development"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
+                                    Web Development</li>
+                                </Link>
+
+                                <Link href="/services/app-development"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
+                                    App Development</li>
+                                </Link>
+
+                                <Link href="/services/seo-optimization"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
+                                    SEO Optimization</li>
+                                </Link>
                             </ul>
                         )}
                     </li>
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                        <Link href="/portfolio">Portfolio</Link>
+                    <Link href="/portfolio"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        Portfolio
                     </li>
-                    <li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
-                        <Link href="/contact">Contact Us</Link>
+                    </Link>
+                    
+                    <Link href="/contact"><li className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800 px-4 py-2 rounded-md">
+                        Contact Us
                     </li>
+                    </Link>
+
                     <Link href="/quotation">
                         <Button variant="outline">Request a quotation</Button>
                     </Link>
