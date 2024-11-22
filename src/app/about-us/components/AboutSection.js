@@ -37,7 +37,7 @@ const AboutSection = () => {
         {/* Text Section */}
         <div
           className="text-gray-700 dark:text-gray-300"
-          data-aos="fade-left"
+          data-aos="fade-up" data-aos-delay="300"
         >
           <p className="text-base md:text-lg leading-relaxed mb-6">
             We are an award-winning, multi-disciplinary web designing/development, digital,

@@ -14,14 +14,14 @@ const VisionMissionSection = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 py-16 md:py-20 dark:bg-gray-800" data-aos="fade-up">
+    <div className="bg-gray-50 py-16 md:py-20 dark:bg-gray-800" >
       <div className="container mx-auto max-w-full sm:max-w-md lg:max-w-3xl xl:max-w-4xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 text-center">
           {/* Vision */}
           <div className="transform hover:scale-105 motion-safe:animate-fadeIn">
           <div
             className="bg-white shadow-lg p-8 rounded-lg transform hover:scale-105 transition-transform duration-300 dark:bg-gray-700 dark:text-white"
-            data-aos="fade-up"
+            data-aos="zoom-in"
           >
             <h3 className="text-xl md:text-2xl font-bold text-blue-700 dark:text-blue-400 mb-6">Our Vision</h3>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed dark:text-gray-300">
@@ -35,7 +35,7 @@ const VisionMissionSection = () => {
           <div className="transform hover:scale-105 motion-safe:animate-fadeIn">
           <div
             className="bg-white shadow-lg p-8 rounded-lg transform hover:scale-105 transition-transform duration-300 dark:bg-gray-700 dark:text-white"
-            data-aos="fade-up"
+            data-aos="zoom-in"
           >
             <h3 className="text-xl md:text-2xl font-bold text-blue-700 dark:text-blue-400 mb-6">Our Mission</h3>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed dark:text-gray-300">
