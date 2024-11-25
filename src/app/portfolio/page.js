@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FeaturedProjects from './FeaturedProjects';
+import Navigation from "../../components/Navigation";
 
 
 export default function PortfolioPage() {
   return (
     <main>
+<Navigation/>
       {/* Hero Section */}
 <div className="relative bg-blue-800 text-white dark:bg-blue-900">
   {/* Background Image */}
