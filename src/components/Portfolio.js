@@ -11,6 +11,8 @@ import Image from "next/legacy/image";
 import project1 from "../../public/About.png";
 import project2 from "../../public/About.png";
 import project3 from "../../public/About.png";
+import project4 from "../../public/Portfolio/project-1.png";
+import project5 from "../../public/About.png";
 
 export default function RecentProjects() {
     useEffect(() => {
@@ -26,32 +28,37 @@ export default function RecentProjects() {
         {
             id: 1,
             title: "E-commerce Website",
-            description: "A modern e-commerce platform with user-friendly design and optimized shopping experience.",
+            description: "An innovative e-commerce platform offering a modern and seamless shopping experience with user-friendly and best features.",
             image: project1,
+            link: "https://main.d2o51kknziiguz.amplifyapp.com/",
         },
         {
             id: 2,
             title: "Portfolio Website",
-            description: "A personal portfolio showcasing skills, projects, and achievements for clients and employers.",
+            description: "A professional portfolio website designed to showcase skills, projects, and achievements for personal branding and client acquisition.",
             image: project2,
+            link: "/projects/portfolio-website",
         },
         {
             id: 3,
-            title: "Mobile App Development",
-            description: "A mobile app tailored for seamless user interaction and innovative functionality.",
+            title: "Virtual Learning Environment",
+            description: "A dynamic platform providing online learning tools and resources, allowing students to access education anytime, anywhere.",
             image: project3,
+            link: "https://next.d1rzf1zcqe18da.amplifyapp.com/",
         },
         {
             id: 4,
-            title: "Mobile App Development",
-            description: "A mobile app tailored for seamless user interaction and innovative functionality.",
-            image: project3,
+            title: "Textile Shop",
+            description: "An engaging and functional online textile shop that makes it easy to browse, select, and purchase fabrics with a smooth user interface.",
+            image: project4,
+            link: "https://glorious-demo.netlify.app/",
         },
         {
             id: 5,
-            title: "Mobile App Development",
-            description: "A mobile app tailored for seamless user interaction and innovative functionality.",
-            image: project3,
+            title: "CRM Solution",
+            description: "A robust and customizable customer relationship management tool to streamline business interactions, enhance customer engagement, and boost sales.",
+            image: project5,
+            link: "/projects/crm-solution",
         },
     ];
 
@@ -64,13 +71,13 @@ export default function RecentProjects() {
                 </p>
             </div>
             <Swiper
-                modules={[ Autoplay]}
+                modules={[Autoplay]}
                 slidesPerView={1}
                 spaceBetween={30}
                 pagination={{ clickable: true }}
                 autoplay={{
-                    delay: 3000, // Delay in ms
-                    disableOnInteraction: false, // Continue autoplay after user interaction
+                    delay: 3000,
+                    disableOnInteraction: false,
                 }}
                 breakpoints={{
                     640: { slidesPerView: 1 },
@@ -80,31 +87,37 @@ export default function RecentProjects() {
             >
                 {projects.map((project) => (
                     <SwiperSlide key={project.id}>
-                    <div
-                        className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
-                        data-aos="fade-up" // Add animation here
-                    >
-                        <div className="relative w-full h-48">
-                            <Image
-                                src={project.image}
-                                alt={project.title}
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-t-lg"
-                            />
-                        </div>
-                        <div className="p-6">
-                            <h3
-                                className="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-                                data-aos="zoom-in" // Optional: add a different animation
+                        <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block"
+                        >
+                            <div
+                                className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
+                                data-aos="fade-up"
                             >
-                                {project.title}
-                            </h3>
-                            <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                
+                                <div className="relative w-full h-48">
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="rounded-t-lg"
+                                    />
+                                </div>
+                                <div className="p-6">
+                                    <h3
+                                        className="text-xl font-semibold text-gray-900 dark:text-white mb-2"
+                                        data-aos="zoom-in"
+                                    >
+                                        {project.title}
+                                    </h3>
+                                    <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </SwiperSlide>
                 ))}
             </Swiper>
         </section>
