@@ -60,9 +60,9 @@ export default function PortfolioPage() {
   <p className="mt-4 text-lg text-gray-200 dark:text-gray-100">
     Get in touch with us today to discuss your project and start building something great.
   </p>
-  <button className="mt-6 px-6 sm:px-4 py-3 sm:py-2 bg-white text-blue-600 dark:bg-blue-800 dark:text-white font-semibold rounded-lg shadow-lg hover:bg-blue-500 hover:text-white dark:hover:bg-blue-700 transition-all">
+  <Link href="/contact"><button className="mt-6 px-6 sm:px-4 py-3 sm:py-2 bg-white text-blue-600 dark:bg-blue-800 dark:text-white font-semibold rounded-lg shadow-lg hover:bg-blue-500 hover:text-white dark:hover:bg-blue-700 transition-all">
     Contact Us
-  </button>
+  </button></Link>
 </section>
     </main>
   );
