@@ -39,16 +39,10 @@ const AboutSection = () => {
           className="text-gray-700 dark:text-gray-300"
           data-aos="fade-up" data-aos-delay="300"
         >
-          <p className="text-base md:text-lg leading-relaxed mb-6">
-            We are an award-winning, multi-disciplinary web designing/development, digital,
-            and social media marketing agency in Sri Lanka. We integrate creativity,
-            proven marketing strategies, and cutting-edge technologies to deliver powerful
-            results that drive the growth of brands.
+          <p className="text-base md:text-lg leading-relaxed mb-6 text-justify">
+          "At FrithCode, we are a passionate team of web development experts dedicated to transforming ideas into reality. Specializing in custom website design, development, and digital solutions, we cater to businesses of all sizes. Our mission is to create cutting-edge, responsive, and scalable websites that not only look stunning but also perform flawlessly across all devices. With a focus on client satisfaction, we pride ourselves on delivering projects that meet deadlines, exceed expectations, and drive measurable results. Whether it’s e-commerce platforms, corporate websites, or custom web applications, we are here to elevate your online presence and help your business thrive in the digital world."
           </p>
-          <p className="text-base md:text-lg leading-relaxed">
-            Interested in partnering with us? We’d love to hear from you! Say hello to get
-            to know what we can do for your brand.
-          </p>
+          
         </div>
       </div>
     </div>

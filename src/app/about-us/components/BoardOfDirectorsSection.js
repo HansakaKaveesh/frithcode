@@ -26,13 +26,13 @@ const BoardOfDirectorsSection = () => {
         >
           <Image
             src="/Director1.jpg"
-            alt="Hashan Thuduhena, Founder & CEO"
+            alt="Madhara Wedhage, Founder & CEO"
             width={250}
             height={250}
             className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600"
             style={{ objectFit: 'cover' }}
           />
-          <h4 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-100">Hashan Thuduhena</h4>
+          <h4 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-100">Madhara Wedhage</h4>
           <p className="text-md text-gray-600 dark:text-gray-300">Founder & CEO</p>
         </div>
         {/* Director 2 */}
@@ -43,13 +43,13 @@ const BoardOfDirectorsSection = () => {
         >
           <Image
             src="/Director2.jpg"
-            alt="Achini Perera, Director"
+            alt="Lakshima Kaushani, Director"
             width={250}
             height={250}
             className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600"
             style={{ objectFit: 'cover' }}
           />
-          <h4 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-100">Achini Perera</h4>
+          <h4 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-100">Lakshima Kaushani</h4>
           <p className="text-md text-gray-600 dark:text-gray-300">Director</p>
         </div>
         {/* Director 3 */}
@@ -59,13 +59,13 @@ const BoardOfDirectorsSection = () => {
         >
           <Image
             src="/Director2.jpg"
-            alt="Achini Perera, Director"
+            alt="Achini, Director"
             width={250}
             height={250}
             className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600"
             style={{ objectFit: 'cover' }}
           />
-          <h4 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-100">Achini Perera</h4>
+          <h4 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-100">Achini</h4>
           <p className="text-md text-gray-600 dark:text-gray-300">Director</p>
         </div>
       </div>
