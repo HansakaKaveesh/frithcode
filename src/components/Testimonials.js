@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/legacy/image";
-import client1 from "../../public/About.png";
-import client2 from "../../public/About.png";
-import client3 from "../../public/About.png";
+import client1 from "../../public/Men.jpg";
+import client2 from "../../public/Women.jpg";
+import client3 from "../../public/Men.jpg";
 
 export default function Testimonials() {
     useEffect(() => {

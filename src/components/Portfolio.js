@@ -8,9 +8,9 @@ import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import Image from "next/legacy/image";
-import project1 from "../../public/About.png";
-import project2 from "../../public/About.png";
-import project3 from "../../public/About.png";
+import project1 from "../../public/Portfolio/E-commerce.jpg";
+import project2 from "../../public/Portfolio/Port.jpg";
+import project3 from "../../public/Portfolio/vle.jpg";
 import project4 from "../../public/Portfolio/project-1.png";
 import project5 from "../../public/About.png";
 
@@ -51,7 +51,7 @@ export default function RecentProjects() {
             title: "Textile Shop",
             description: "An engaging and functional online textile shop that makes it easy to browse, select, and purchase fabrics with a smooth user interface.",
             image: project4,
-            link: "https://glorious-demo.netlify.app/",
+            link: "https://gloriousfabric.lk/",
         },
         {
             id: 5,

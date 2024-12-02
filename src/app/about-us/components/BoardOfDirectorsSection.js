@@ -58,7 +58,7 @@ const BoardOfDirectorsSection = () => {
           data-aos="fade-up"
         >
           <Image
-            src="/BC.jpg"
+            src="/Achini.jpg"
             alt="Achini, Director"
             width={250}
             height={250}
