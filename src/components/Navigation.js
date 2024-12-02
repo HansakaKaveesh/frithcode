@@ -49,8 +49,8 @@ export default function Navigation() {
                                 Web Development</li>
                             </Link>
                             
-                            <Link href="/services/app-development"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                App Development</li>
+                            <Link href="/services/e-commerce-solutions"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
+                            E-Commerce Solutions</li>
                             </Link>
 
                             <Link href="/services/seo-optimization"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
