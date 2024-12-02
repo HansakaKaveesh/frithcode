@@ -25,7 +25,7 @@ const BoardOfDirectorsSection = () => {
           data-aos="fade-up"
         >
           <Image
-            src="/Director1.jpg"
+            src="/madara.png"
             alt="Madhara Wedhage, Founder & CEO"
             width={250}
             height={250}

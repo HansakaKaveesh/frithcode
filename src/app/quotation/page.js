@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import Link from 'next/link';
+import Navigation from "../../components/Navigation";
 
 const QuotationPage = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +24,8 @@ const QuotationPage = () => {
   };
 
   return (
+   <div>
+    <Navigation/>
     <div className="bg-white dark:bg-gray-900">
       {/* Hero Section */}
       <div className="relative bg-blue-800 text-white dark:bg-blue-900">
@@ -201,6 +204,7 @@ const QuotationPage = () => {
   </form>
 </div>
 
+    </div>
     </div>
   );
 };
