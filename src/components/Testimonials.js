@@ -20,8 +20,8 @@ export default function Testimonials() {
     const testimonials = [
         {
             id: 1,
-            name: "Alex Johnson",
-            feedback: "FrithCode exceeded our expectations with their expertise and dedication. Our website looks stunning and functions perfectly!",
+            name: "Sachith Gunasekara",
+            feedback: "Thank you so much for everyones hardwork and dedication. Even through your rough times. I appreciate it!",
             image: client1,
         },
         {

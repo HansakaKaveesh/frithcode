@@ -5,20 +5,20 @@ const projects = [
   {
     title: 'E-Commerce Website',
     description: 'An online store with a modern UI and robust functionality.',
-    image: '/Portfolio/project-1.png',
-    link: '/projects/ecommerce',
+    image: '/Portfolio/E-commerce.jpg',
+    link: 'https://main.d2o51kknziiguz.amplifyapp.com/',
   },
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio to showcase skills and projects.',
-    image: '/Portfolio/project-1.png',
+    image: '/Portfolio/Port.jpg',
     link: '/projects/portfolio',
   },
   {
-    title: 'Task Manager App',
+    title: 'Textile Shop',
     description: 'A productivity app to manage tasks effectively.',
     image: '/Portfolio/project-1.png',
-    link: '/projects/task-manager',
+    link: 'https://gloriousfabric.lk/',
   },
 ];
 
