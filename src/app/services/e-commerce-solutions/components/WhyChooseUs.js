@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const WhyChooseUs = () => {
   const features = [
-    { src: "/Services/custom-design.png", title: "Custom Design", description: "Tailored website designs that reflect your unique brand and goals, making your online presence truly stand out." },
-    { src: "/Services/secure.png", title: "Secure & Fast", description: "Our websites are highly optimized, secure, and provide a seamless user experience, ensuring both speed and safety." },
-    { src: "/Services/support.png", title: "Ongoing Support", description: "We provide reliable support to ensure your website remains up-to-date and performs optimally at all times." }
+    { src: "/Services/Ecommerce/user-friendly.png", title: "User-Friendly", description: "Designing intuitive interfaces that make online shopping easy and enjoyable for your customers." },
+    { src: "/Services/Ecommerce/secure-payment.png", title: "Secure Payments", description: "Ensuring safe and reliable payment gateways to protect customer data and build trust." },
+    { src: "/Services/Ecommerce/24-7-support.png", title: "24/7 Support", description: "Providing round-the-clock assistance to keep your online store running smoothly." }
   ];
 
   return (
