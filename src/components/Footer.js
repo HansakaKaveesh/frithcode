@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -41,28 +42,31 @@ export default function Footer() {
         </div>
 
         {/* Contact Section */}
-        <div>
-          <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
-          <p className="text-sm text-gray-400">
-            Email: contact@yourstore.com
-          </p>
-          <p className="text-sm text-gray-400">Phone: +1 234 567 890</p>
-          <div className="flex space-x-4 mt-4">
-            <Link href="https://facebook.com">
-              <FaFacebook className="text-xl hover:text-blue-500" />
-            </Link>
-            <Link href="https://twitter.com">
-              <FaTwitter className="text-xl hover:text-blue-400" />
-            </Link>
-            <Link href="https://instagram.com">
-              <FaInstagram className="text-xl hover:text-pink-500" />
-            </Link>
-            <Link href="https://linkedin.com">
-              <FaLinkedin className="text-xl hover:text-blue-700" />
-            </Link>
-          </div>
-        </div>
+        
+    <div>
+      <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
+      <p className="flex items-center text-sm text-gray-400">
+        <FaEnvelope className="mr-2" /> frithcode@gmail.com
+      </p>
+      <p className="flex items-center text-sm text-gray-400">
+        <FaPhone className="mr-2" /> +94 77 410 9023 / +94 77 035 5100
+      </p>
+      <div className="flex space-x-4 mt-4">
+        <Link href="https://facebook.com">
+          <FaFacebook className="text-xl hover:text-blue-500" />
+        </Link>
+        <Link href="https://twitter.com">
+          <FaTwitter className="text-xl hover:text-blue-400" />
+        </Link>
+        <Link href="https://instagram.com">
+          <FaInstagram className="text-xl hover:text-pink-500" />
+        </Link>
+        <Link href="https://linkedin.com">
+          <FaLinkedin className="text-xl hover:text-blue-700" />
+        </Link>
       </div>
+    </div>
+</div>
 
       <div className="mt-10 border-t border-gray-800 pt-6 text-center">
         <p className="text-sm text-gray-500">
