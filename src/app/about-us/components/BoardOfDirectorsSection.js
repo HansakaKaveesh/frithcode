@@ -42,7 +42,7 @@ const BoardOfDirectorsSection = () => {
           data-aos="fade-up"
         >
           <Image
-            src="/Director2.jpg"
+            src="/BC.jpg"
             alt="Lakshima Kaushani, Director"
             width={250}
             height={250}
@@ -58,7 +58,7 @@ const BoardOfDirectorsSection = () => {
           data-aos="fade-up"
         >
           <Image
-            src="/Director2.jpg"
+            src="/BC.jpg"
             alt="Achini, Director"
             width={250}
             height={250}

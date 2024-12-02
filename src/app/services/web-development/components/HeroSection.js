@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/Aboutus.jpg")', // Adjust the image path accordingly
+          backgroundImage: 'url("/Services/bg.png")', // Adjust the image path accordingly
         }}
       ></div>
 
