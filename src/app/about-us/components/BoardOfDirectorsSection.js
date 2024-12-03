@@ -20,7 +20,7 @@ const BoardOfDirectorsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 justify-center">
         {/* Director 1 */}
         <div
-          className="text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gradient-to-r dark:from-gray-700 dark:to-gray-600"
+          className="text-center bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gray-800"
           data-aos="fade-up"
         >
           <Image
@@ -31,12 +31,12 @@ const BoardOfDirectorsSection = () => {
             className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600 transition-all duration-300 transform hover:scale-105"
             style={{ objectFit: 'cover' }}
           />
-          <h4 className="mt-4 text-3xl font-bold text-gray-100">Madhara Wedhage</h4>
-          <p className="text-lg text-gray-100">Founder & CEO</p>
+          <h4 className="mt-4 text-3xl font-bold text-gray-900 dark:text-gray-100">Madhara Wedhage</h4>
+          <p className="text-lg text-gray-600 dark:text-gray-300">Founder & CEO</p>
         </div>
         {/* Director 2 */}
         <div
-          className="text-center bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gradient-to-r dark:from-gray-700 dark:to-gray-600"
+          className="text-center bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gray-800"
           data-aos="fade-up"
         >
           <Image
@@ -47,12 +47,12 @@ const BoardOfDirectorsSection = () => {
             className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600 transition-all duration-300 transform hover:scale-105"
             style={{ objectFit: 'cover' }}
           />
-          <h4 className="mt-4 text-3xl font-bold text-gray-100">Lakshima Kaushani</h4>
-          <p className="text-lg text-gray-100">Director</p>
+          <h4 className="mt-4 text-3xl font-bold text-gray-900 dark:text-gray-100">Lakshima Kaushani</h4>
+          <p className="text-lg text-gray-600 dark:text-gray-300">Director</p>
         </div>
         {/* Director 3 */}
         <div
-          className="text-center bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gradient-to-r dark:from-gray-700 dark:to-gray-600"
+          className="text-center bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gray-800"
           data-aos="fade-up"
         >
           <Image
@@ -63,8 +63,8 @@ const BoardOfDirectorsSection = () => {
             className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600 transition-all duration-300 transform hover:scale-105"
             style={{ objectFit: 'cover' }}
           />
-          <h4 className="mt-4 text-3xl font-bold text-gray-100">Achini</h4>
-          <p className="text-lg text-gray-100">Director</p>
+          <h4 className="mt-4 text-3xl font-bold text-gray-900 dark:text-gray-100">Achini</h4>
+          <p className="text-lg text-gray-600 dark:text-gray-300">Director</p>
         </div>
       </div>
     </div>
