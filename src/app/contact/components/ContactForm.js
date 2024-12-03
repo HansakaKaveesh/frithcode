@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
@@ -20,13 +20,12 @@ export default function ContactForm() {
     e.preventDefault();
     const { name, email, message } = formState;
 
-    // Replace SERVICE_ID, TEMPLATE_ID, and USER_ID with your EmailJS credentials
     emailjs
       .send(
-        "SERVICE_ID",
-        "TEMPLATE_ID",
+        process.env.NEXT_PUBLIC_SERVICE_ID, // Load from environment variables
+        "template_w4z7zvw", // Replace with your actual template ID
         { name, email, message },
-        "USER_ID"
+        process.env.NEXT_PUBLIC_USER_ID // Load from environment variables
       )
       .then(
         (response) => {
