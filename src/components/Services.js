@@ -78,7 +78,7 @@ const WebDevelopmentServices = () => {
               Data Security
             </h3>
             <p className="text-gray-600 dark:text-gray-400 sm:text-lg">
-              We build secure and scalable e-commerce platforms for businesses of all sizes.
+            Data security protects data from unauthorized access and threats, ensuring its confidentiality, integrity, and availability.
             </p>
           </div>
         </div>
