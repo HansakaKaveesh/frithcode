@@ -42,7 +42,7 @@ export default function About() {
                 src={teamImage} 
                 alt="Team working together" 
                 className="rounded-lg" 
-                width={400} 
+                width={560} 
                 height={400} 
             />
             </div>
