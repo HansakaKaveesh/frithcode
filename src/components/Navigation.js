@@ -53,9 +53,6 @@ export default function Navigation() {
                             E-Commerce Solutions</li>
                             </Link>
 
-                            <Link href="/services/seo-optimization"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                SEO Optimization</li>
-                            </Link>
                         </ul>
                     )}
                 </li>
@@ -110,9 +107,6 @@ export default function Navigation() {
                                 E-Commerce Solutions</li>
                                 </Link>
 
-                                <Link href="/services/seo-optimization"><li className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-800 cursor-pointer">
-                                    SEO Optimization</li>
-                                </Link>
                             </ul>
                         )}
                     </li>

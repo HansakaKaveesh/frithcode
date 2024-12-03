@@ -52,7 +52,7 @@ export default function Footer() {
         <FaPhone className="mr-2" /> +94 77 410 9023 / +94 77 035 5100
       </p>
       <div className="flex space-x-4 mt-4">
-        <Link href="https://facebook.com">
+        <Link href="https://web.facebook.com/Frithcode">
           <FaFacebook className="text-xl hover:text-blue-500" />
         </Link>
         <Link href="https://twitter.com">
