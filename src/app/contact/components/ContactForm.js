@@ -23,7 +23,7 @@ export default function ContactForm() {
     emailjs
       .send(
         process.env.NEXT_PUBLIC_SERVICE_ID, // Load from environment variables
-        "template_w4z7zvw", // Replace with your actual template ID
+        'template_w4z7zvw', // Replace with your actual template ID
         { name, email, message },
         process.env.NEXT_PUBLIC_USER_ID // Load from environment variables
       )
