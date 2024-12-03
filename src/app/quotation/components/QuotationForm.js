@@ -9,6 +9,7 @@ const QuotationForm = () => {
     phone: "",
     projectType: "",
     budget: "",
+    currency: "SLR", // Default currency
     description: "",
   });
 
@@ -26,16 +27,16 @@ const QuotationForm = () => {
       email: formData.email,
       phone: formData.phone,
       projectType: formData.projectType,
-      budget: formData.budget,
+      budget: `${formData.currency} ${formData.budget}`,
       description: formData.description,
     };
 
     emailjs
       .send(
         process.env.NEXT_PUBLIC_SERVICE_ID, // Your EmailJS service ID
-      'template_n1r2qd4', // Your EmailJS template ID (as a string)
-      templateParams, // Data to pass to the template
-      process.env.NEXT_PUBLIC_USER_ID // Your EmailJS user ID
+        'template_n1r2qd4', // Your EmailJS template ID (as a string)
+        templateParams, // Data to pass to the template
+        process.env.NEXT_PUBLIC_USER_ID // Your EmailJS user ID
       )
       .then(
         (response) => {
@@ -47,6 +48,7 @@ const QuotationForm = () => {
             phone: "",
             projectType: "",
             budget: "",
+            currency: "SLR", // Reset currency to default
             description: "",
           });
         },
@@ -126,8 +128,8 @@ const QuotationForm = () => {
             >
               <option value="">Select Project Type</option>
               <option value="website">Website Development</option>
-              <option value="ecommerce">E-commerce</option>
-              <option value="mobileApp">Mobile App</option>
+              <option value="e_commerce">E-commerce</option>
+              <option value="VLE_site">VLE Site</option>
               <option value="other">Other</option>
             </select>
           </div>
@@ -136,15 +138,31 @@ const QuotationForm = () => {
           <label htmlFor="budget" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
             Estimated Budget
           </label>
-          <input
-            id="budget"
-            type="text"
-            name="budget"
-            value={formData.budget}
-            onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-md dark:border-gray-600 dark:bg-gray-700"
-            placeholder="Enter your budget"
-          />
+          <div className="flex items-center">
+            <select
+              id="currency"
+              name="currency"
+              value={formData.currency}
+              onChange={handleChange}
+              className="w-24 px-4 py-2 border rounded-md dark:border-gray-600 dark:bg-gray-700"
+            >
+              <option value="SLR">SLR</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="INR">INR</option>
+              {/* Add more currencies as needed */}
+            </select>
+            <input
+              id="budget"
+              type="text"
+              name="budget"
+              value={formData.budget}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md dark:border-gray-600 dark:bg-gray-700 ml-2"
+              placeholder="Enter your budget"
+            />
+          </div>
         </div>
         <div>
           <label htmlFor="description" className="block text-gray-700 dark:text-gray-300 font-medium mb-2">
