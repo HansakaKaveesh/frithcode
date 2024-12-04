@@ -19,12 +19,12 @@ export default function HeroSection({ title, breadcrumb }) {
     Feel free to reach out with any
     inquiries or feedback.
     </p>
-        <p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
+        {/*<p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
           <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
             Home
           </Link>{' '}
           &gt; {breadcrumb}
-        </p>
+        </p>*/}
       </div>
     </div>
   );

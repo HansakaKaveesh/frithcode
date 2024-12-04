@@ -23,12 +23,12 @@ const HeroSection = () => {
         <p className="mt-4 text-lg opacity-0 animate-fadeInUp delay-200">
           Building seamless, scalable, and feature-rich online stores tailored to your business.
         </p>
-        <p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
+        {/*<p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
           <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
             Home
           </Link>{' '}
           &gt; Services &gt; E-Commerce Solutions
-        </p>
+        </p>*/}
       </div>
     </div>
   );

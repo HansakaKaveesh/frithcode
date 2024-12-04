@@ -9,7 +9,7 @@ const QuotationForm = () => {
     phone: "",
     projectType: "",
     budget: "",
-    currency: "SLR", // Default currency
+    currency: "LKR", // Default currency
     description: "",
   });
 
@@ -48,7 +48,7 @@ const QuotationForm = () => {
             phone: "",
             projectType: "",
             budget: "",
-            currency: "SLR", // Reset currency to default
+            currency: "LKR", // Reset currency to default
             description: "",
           });
         },
@@ -146,7 +146,7 @@ const QuotationForm = () => {
               onChange={handleChange}
               className="w-24 px-4 py-2 border rounded-md dark:border-gray-600 dark:bg-gray-700"
             >
-              <option value="SLR">SLR</option>
+              <option value="LKR">LKR</option>
               <option value="USD">USD</option>
               <option value="EUR">EUR</option>
               <option value="GBP">GBP</option>

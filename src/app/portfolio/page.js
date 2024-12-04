@@ -33,13 +33,13 @@ export default function PortfolioPage() {
       Explore our innovative web solutions for businesses across the globe.
     </p>
 
-    {/* Breadcrumb Animation */}
+    {/* Breadcrumb Animation 
     <p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
       <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
         Home
       </Link>{' '}
       &gt; Portfolio
-    </p>
+    </p>*/}
   </div>
 </div>
 
