@@ -1,7 +1,7 @@
 // src/components/WhyChooseUs.js
 "use client"
 import { useEffect } from 'react';
-import Image from 'next/image';
+import { FaPaintBrush, FaShieldAlt, FaHeadset } from 'react-icons/fa'; // Importing the icons
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -15,9 +15,9 @@ const WhyChooseUs = () => {
   }, []);
 
   const features = [
-    { src: "/Services/custom-design.png", title: "Custom Design", description: "Tailored website designs that reflect your unique brand and goals, making your online presence truly stand out." },
-    { src: "/Services/secure.png", title: "Secure & Fast", description: "Our websites are highly optimized, secure, and provide a seamless user experience, ensuring both speed and safety." },
-    { src: "/Services/support.png", title: "Ongoing Support", description: "We provide reliable support to ensure your website remains up-to-date and performs optimally at all times." }
+    { icon: <FaPaintBrush size={40} />, title: "Custom Design", description: "Tailored website designs that reflect your unique brand and goals, making your online presence truly stand out." },
+    { icon: <FaShieldAlt size={40} />, title: "Secure & Fast", description: "Our websites are highly optimized, secure, and provide a seamless user experience, ensuring both speed and safety." },
+    { icon: <FaHeadset size={40} />, title: "Ongoing Support", description: "We provide reliable support to ensure your website remains up-to-date and performs optimally at all times." }
   ];
 
   return (
@@ -31,8 +31,8 @@ const WhyChooseUs = () => {
             data-aos-delay={`${index * 200}`} // Stagger animation based on the index
             className="text-center bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow rounded-lg p-8 transform hover:scale-105"
           >
-            <div className="relative w-20 h-20 mx-auto">
-              <Image src={item.src} alt={item.title} fill className="object-contain" />
+            <div className="text-blue-600 dark:text-blue-300 mx-auto">
+              {item.icon}
             </div>
             <h3 className="text-2xl font-semibold mt-6 text-blue-600 dark:text-blue-300">{item.title}</h3>
             <p className="mt-4 text-gray-700 dark:text-gray-300">{item.description}</p>

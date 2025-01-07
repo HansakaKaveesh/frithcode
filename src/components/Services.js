@@ -1,13 +1,14 @@
-"use client"
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FaLaptopCode, FaShoppingCart, FaSearch, FaShieldAlt } from "react-icons/fa";
 
 const WebDevelopmentServices = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
-      easing: 'ease-in-out', // Animation easing
+      easing: "ease-in-out", // Animation easing
       offset: 100, // Offset for triggering animations
       once: true, // Trigger animation only once
     });
@@ -35,6 +36,7 @@ const WebDevelopmentServices = () => {
             className="bg-white shadow-lg rounded-lg p-6 max-w-xs mx-auto hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 dark:bg-gray-700 dark:text-gray-200"
             data-aos="zoom-in"
           >
+            <FaLaptopCode className="text-5xl text-blue-500 mb-4 mx-auto" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 dark:text-gray-100 sm:text-3xl">
               Web based systems
             </h3>
@@ -48,6 +50,7 @@ const WebDevelopmentServices = () => {
             data-aos="zoom-in"
             data-aos-delay="200"
           >
+            <FaShoppingCart className="text-5xl text-green-500 mb-4 mx-auto" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 dark:text-gray-100 sm:text-3xl">
               E-Commerce Solutions
             </h3>
@@ -61,6 +64,7 @@ const WebDevelopmentServices = () => {
             data-aos="zoom-in"
             data-aos-delay="400"
           >
+            <FaSearch className="text-5xl text-yellow-500 mb-4 mx-auto" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 dark:text-gray-100 sm:text-3xl">
               SEO Optimization
             </h3>
@@ -74,11 +78,12 @@ const WebDevelopmentServices = () => {
             data-aos="zoom-in"
             data-aos-delay="600"
           >
+            <FaShieldAlt className="text-5xl text-red-500 mb-4 mx-auto" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 dark:text-gray-100 sm:text-3xl">
               Data Security
             </h3>
             <p className="text-gray-600 dark:text-gray-400 sm:text-lg">
-            Data security protects data from unauthorized access and threats, ensuring its confidentiality, integrity, and availability.
+              Data security protects data from unauthorized access and threats, ensuring its confidentiality, integrity, and availability.
             </p>
           </div>
         </div>

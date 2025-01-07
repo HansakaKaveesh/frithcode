@@ -1,4 +1,3 @@
-// components/HeroSection.js
 import Link from 'next/link';
 
 const HeroSection = () => {
@@ -8,8 +7,11 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/Aboutus.jpg")', // Adjust the image path accordingly
+          backgroundImage: 'url("/Aboutus.jpg")',
+          backgroundAttachment: 'fixed', // Parallax effect
         }}
+        role="img"
+        aria-label="Background image showcasing About Us section"
       ></div>
 
       {/* Blue Transparent Overlay */}
@@ -23,7 +25,8 @@ const HeroSection = () => {
         <p className="mt-4 text-lg opacity-0 animate-fadeInUp delay-200">
           Explore our innovative web solutions for businesses across the globe.
         </p>
-       {/* <p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
+        {/* Breadcrumb (Optional) 
+        <p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
           <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
             Home
           </Link>{' '}
