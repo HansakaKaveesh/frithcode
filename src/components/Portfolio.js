@@ -30,7 +30,7 @@ export default function RecentProjects() {
             title: "E-commerce Website",
             description: "An innovative e-commerce platform offering a modern and seamless shopping experience with user-friendly and best features.",
             image: project1,
-            link: "https://main.d2o51kknziiguz.amplifyapp.com/",
+            link: "https://main.d3a1zc6e3rvt3f.amplifyapp.com/",
         },
         {
             id: 2,
@@ -44,7 +44,7 @@ export default function RecentProjects() {
             title: "Virtual Learning Environment",
             description: "A dynamic platform providing online learning tools and resources, allowing students to access education anytime, anywhere.",
             image: project3,
-            link: "https://next.d1rzf1zcqe18da.amplifyapp.com/",
+            link: "https://main.d1i1q5sjg3pojs.amplifyapp.com/",
         },
         {
             id: 4,

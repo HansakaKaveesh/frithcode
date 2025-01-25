@@ -6,7 +6,7 @@ const projects = [
     title: 'E-Commerce Website',
     description: 'An online store with a modern UI and robust functionality.',
     image: '/Portfolio/E-commerce.jpg',
-    link: 'https://main.d2o51kknziiguz.amplifyapp.com/',
+    link: 'https://main.d3a1zc6e3rvt3f.amplifyapp.com/',
   },
   {
     title: 'Portfolio Website',
