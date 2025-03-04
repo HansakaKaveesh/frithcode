@@ -8,18 +8,21 @@ import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import Image from "next/legacy/image";
+import { FiExternalLink } from "react-icons/fi";
+
 import project1 from "../../public/Portfolio/E-commerce.jpg";
 import project2 from "../../public/Portfolio/Port.jpg";
 import project3 from "../../public/Portfolio/vle.jpg";
 import project4 from "../../public/Portfolio/project-1.png";
 import project5 from "../../public/About.png";
 
+// ... (keep your image imports the same)
+
 export default function RecentProjects() {
     useEffect(() => {
         AOS.init({
             duration: 1000,
             easing: "ease-in-out",
-            offset: 100,
             once: true,
         });
     }, []);
@@ -63,60 +66,87 @@ export default function RecentProjects() {
     ];
 
     return (
-        <section className="py-16 px-8 bg-gray-50 dark:bg-gray-900">
-            <div className="text-center mb-12" data-aos="fade-up">
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Our Recent Projects</h2>
-                <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-xl mx-auto">
-                    Take a look at some of the projects we’ve completed, showcasing our expertise and commitment to quality.
+        <section className="py-20 px-4 sm:px-8 bg-gray-50 dark:bg-gray-900">
+            <div className="text-center mb-16" data-aos="fade-up">
+                <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Our Recent Projects
+                </h2>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Explore our portfolio of successfully delivered projects that demonstrate our technical excellence and creative approach.
                 </p>
             </div>
+
             <Swiper
-                modules={[Autoplay]}
+                modules={[Pagination, Autoplay]}
                 slidesPerView={1}
                 spaceBetween={30}
+                loop={true}
                 pagination={{ clickable: true }}
                 autoplay={{
-                    delay: 3000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
                 breakpoints={{
                     640: { slidesPerView: 1 },
                     768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
+                    1280: { slidesPerView: 3 },
                 }}
+                className="!pb-12"
             >
                 {projects.map((project) => (
                     <SwiperSlide key={project.id}>
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block"
+                        <div
+                            className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full"
+                            data-aos="fade-up"
                         >
-                            <div
-                                className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
-                                data-aos="fade-up"
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block relative overflow-hidden rounded-t-xl"
                             >
-                                <div className="relative w-full h-48">
+                                <div className="relative w-full h-60">
                                     <Image
                                         src={project.image}
-                                        alt={project.title}
+                                        alt={`Screenshot of ${project.title}`}
                                         layout="fill"
                                         objectFit="cover"
-                                        className="rounded-t-lg"
+                                        className="transition-transform duration-300 group-hover:scale-105"
                                     />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
                                 </div>
-                                <div className="p-6">
-                                    <h3
-                                        className="text-xl font-semibold text-gray-900 dark:text-white mb-2"
-                                        data-aos="zoom-in"
-                                    >
+                                <div className="absolute bottom-4 left-4 flex items-center space-x-2">
+                                    <span className="text-white text-lg font-medium">
                                         {project.title}
-                                    </h3>
-                                    <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+                                    </span>
+                                    <FiExternalLink className="text-white w-5 h-5" />
+                                </div>
+                            </a>
+                            <div className="p-6">
+                                <p
+                                    className="text-gray-600 dark:text-gray-300 mb-4 h-24 overflow-y-auto"
+                                    data-aos="fade-up"
+                                    data-aos-delay="150"
+                                >
+                                    {project.description}
+                                </p>
+                                <div
+                                    className="flex justify-end"
+                                    data-aos="fade-up"
+                                    data-aos-delay="200"
+                                >
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300"
+                                    >
+                                        View Project
+                                        <FiExternalLink className="ml-2 w-4 h-4" />
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

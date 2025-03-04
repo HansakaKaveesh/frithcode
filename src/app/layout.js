@@ -15,19 +15,19 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "FrithCode Technologies ",
+  title: "FrithCode Technologies",
   description: "FrithCode offers innovative web development solutions tailored to your business needs",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-        
-        <Footer/>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navigation />
+        <main className="min-h-[calc(100vh-160px)]">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -3,68 +3,108 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+import { FiLinkedin, FiTwitter, FiGlobe } from 'react-icons/fi';
 
 const BoardOfDirectorsSection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
+      duration: 800,
+      easing: 'ease-out-quad',
       once: true,
       offset: 100,
     });
   }, []);
 
   return (
-    <div className="container mx-auto py-20 px-6 md:px-12 flex flex-col items-center" data-aos="fade-up">
-      <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-gray-100 mb-16">Board of Directors</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 justify-center">
-        {/* Director 1 */}
-        <div
-          className="text-center bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gray-800"
-          data-aos="fade-up"
-        >
-          <Image
-            src="/madara.png"
-            alt="Madhara Wedhage, Founder & CEO"
-            width={250}
-            height={250}
-            className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600 transition-all duration-300 transform hover:scale-105"
-            style={{ objectFit: 'cover' }}
-          />
-          <h4 className="mt-4 text-3xl font-bold text-gray-900 dark:text-gray-100">Madhara Wedhage</h4>
-          <p className="text-lg text-gray-600 dark:text-gray-300">Founder & CEO</p>
-        </div>
-        {/* Director 2 */}
-        <div
-          className="text-center bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gray-800"
-          data-aos="fade-up"
-        >
-          <Image
-            src="/BC.jpg"
-            alt="Lakshima Kaushani, Director"
-            width={250}
-            height={250}
-            className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600 transition-all duration-300 transform hover:scale-105"
-            style={{ objectFit: 'cover' }}
-          />
-          <h4 className="mt-4 text-3xl font-bold text-gray-900 dark:text-gray-100">Lakshima Kaushani</h4>
-          <p className="text-lg text-gray-600 dark:text-gray-300">Director</p>
-        </div>
-        {/* Director 3 */}
-        <div
-          className="text-center bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 dark:bg-gray-800"
-          data-aos="fade-up"
-        >
-          <Image
-            src="/Achini.jpg"
-            alt="Achini Wickramasinghe, Director"
-            width={250}
-            height={250}
-            className="mx-auto mb-6 rounded-full border-4 border-gray-200 dark:border-gray-600 transition-all duration-300 transform hover:scale-105"
-            style={{ objectFit: 'cover' }}
-          />
-          <h4 className="mt-4 text-3xl font-bold text-gray-900 dark:text-gray-100">Achini Wickramasinghe</h4>
-          <p className="text-lg text-gray-600 dark:text-gray-300">Director</p>
+    <div className="relative bg-gradient-to-b from-blue-50/30 to-white dark:from-gray-900 dark:to-gray-950 py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 mb-16">
+          Leadership Team
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          {[
+            {
+              name: "Madhara Wedhage",
+              role: "Founder & CEO",
+              image: "/madara.png",
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                website: "#"
+              }
+            },
+            {
+              name: "Lakshima Kaushani",
+              role: "Director",
+              image: "/Lakshima.jpg",
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                website: "#"
+              }
+            },
+            {
+              name: "Achini Wickramasinghe",
+              role: "Director",
+              image: "/Achini.jpg",
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                website: "#"
+              }
+            }
+          ].map((member, index) => (
+            <div 
+              key={index}
+              className="group relative bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 dark:to-white/5 rounded-3xl" />
+              <div className="relative">
+                {/* Image Container */}
+                <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-xl group-hover:border-cyan-400 transition-colors duration-300">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover transform transition-all duration-500 group-hover:scale-110"
+                  />
+                </div>
+
+                {/* Content */}
+                <h3 className="text-2xl font-bold text-gray-800 dark:text-white text-center mb-2">
+                  {member.name}
+                </h3>
+                <p className="text-lg text-cyan-600 dark:text-cyan-400 text-center mb-6">
+                  {member.role}
+                </p>
+
+                {/* Social Links */}
+                <div className="flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <a
+                    href={member.social.linkedin}
+                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-gray-600 dark:text-gray-300 hover:text-cyan-600 transition-colors"
+                  >
+                    <FiLinkedin className="w-5 h-5" />
+                  </a>
+                  <a
+                    href={member.social.twitter}
+                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-gray-600 dark:text-gray-300 hover:text-cyan-600 transition-colors"
+                  >
+                    <FiTwitter className="w-5 h-5" />
+                  </a>
+                  <a
+                    href={member.social.website}
+                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-gray-600 dark:text-gray-300 hover:text-cyan-600 transition-colors"
+                  >
+                    <FiGlobe className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
