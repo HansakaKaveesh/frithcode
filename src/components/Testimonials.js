@@ -22,14 +22,14 @@ export default function Testimonials() {
             id: 1,
             name: "Sachith Gunasekara",
             role: "CEO, Tech Innovations",
-            feedback: "FrithCode's dedication exceeded our expectations. Their team navigated through challenging timelines while delivering exceptional quality. Truly partners in our success!",
+            feedback: "FrithCode dedication exceeded our expectations. Their team navigated through challenging timelines while delivering exceptional quality. Truly partners in our success.",
             image: client1,
         },
         {
             id: 2,
             name: "Sarah Thompson",
             role: "Marketing Director",
-            feedback: "A transformative experience! FrithCode's strategic approach boosted our online engagement by 300%. Their creativity is matched only by their technical expertise.",
+            feedback: "A transformative experience! FrithCode strategic approach boosted our online engagement by 300%. Their creativity is matched only by their technical expertise.",
             image: client2,
         },
         {
