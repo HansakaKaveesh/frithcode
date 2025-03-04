@@ -1,7 +1,7 @@
 // src/components/Hero.js
 import { Button } from "../components/ui/button";
 import Link from 'next/link';
-import { FiArrowRight, FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { FiArrowRight, FiGithub, FiLinkedin, FiFacebook, FiInstagram } from 'react-icons/fi';
 import { FaRegLightbulb } from 'react-icons/fa';
 
 export default function Hero() {
@@ -29,9 +29,9 @@ export default function Hero() {
         <div className="flex flex-col gap-6">
             {[
                 { icon: <FiGithub className="w-6 h-6" />, href: "https://github.com" },
-                { icon: <FiLinkedin className="w-6 h-6" />, href: "https://linkedin.com" },
-                { icon: <FiTwitter className="w-6 h-6" />, href: "https://twitter.com" },
-                { icon: <FiInstagram className="w-6 h-6" />, href: "https://instagram.com" }
+                { icon: <FiLinkedin className="w-6 h-6" />, href: "https://www.linkedin.com/company/frithcode-technologies/" },
+                { icon: <FiFacebook className="w-6 h-6" />, href: "https://www.facebook.com/share/1EHBLwGgM3/?mibextid=wwXIfr" },
+                { icon: <FiInstagram className="w-6 h-6" />, href: "https://www.instagram.com/frithcode_technologies?igsh=MWFjMDVxc3Jpc2N1MQ==" }
             ].map((link, index) => (
                 <a
                     key={index}
