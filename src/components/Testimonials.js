@@ -49,7 +49,7 @@ export default function Testimonials() {
                         Client Success Stories
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        Discover how we've helped businesses transform their digital presence and achieve remarkable results.
+                        Discover how we have helped businesses transform their digital presence and achieve remarkable results.
                     </p>
                 </div>
 
