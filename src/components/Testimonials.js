@@ -29,14 +29,14 @@ export default function Testimonials() {
             id: 2,
             name: "Sarah Thompson",
             role: "Marketing Director",
-            feedback: "A transformative experience! FrithCode strategic approach boosted our online engagement by 300%. Their creativity is matched only by their technical expertise.",
+            feedback: "A transformative experience FrithCode strategic approach boosted our online engagement by 300%. Their creativity is matched only by their technical expertise.",
             image: client2,
         },
         {
             id: 3,
             name: "Michael Lee",
             role: "Startup Founder",
-            feedback: "From concept to execution, FrithCode demonstrated unparalleled professionalism. Their solutions helped us secure Series A funding within 6 months.",
+            feedback: "FrithCode demonstrated unparalleled professionalism. Their solutions helped us secure Series A funding within 6 months.",
             image: client3,
         },
     ];
