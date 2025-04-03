@@ -11,10 +11,10 @@ import Image from "next/legacy/image";
 import { FiExternalLink } from "react-icons/fi";
 
 import project1 from "../../public/Portfolio/E-commerce.jpg";
-import project2 from "../../public/Portfolio/Port.jpg";
-import project3 from "../../public/Portfolio/vle.jpg";
-import project4 from "../../public/Portfolio/project-1.png";
-import project5 from "../../public/About.png";
+import project2 from "../../public/Portfolio/Frithcode.jpg";
+import project3 from "../../public/Portfolio/VLE-100.jpg";
+import project4 from "../../public/Portfolio/Glorias-100.jpg";
+import project5 from "../../public//Portfolio/LMS-100.jpg";
 
 // ... (keep your image imports the same)
 
@@ -40,14 +40,14 @@ export default function RecentProjects() {
             title: "Portfolio Website",
             description: "A professional portfolio website designed to showcase skills, projects, and achievements for personal branding and client acquisition.",
             image: project2,
-            link: "/projects/portfolio-website",
+            link: "https://frithcode.vercel.app/",
         },
         {
             id: 3,
             title: "Virtual Learning Environment",
             description: "A dynamic platform providing online learning tools and resources, allowing students to access education anytime, anywhere.",
             image: project3,
-            link: "https://main.d1i1q5sjg3pojs.amplifyapp.com/",
+            link: "https://vle-project-172202922309.us-central1.run.app/",
         },
         {
             id: 4,
@@ -58,10 +58,10 @@ export default function RecentProjects() {
         },
         {
             id: 5,
-            title: "CRM Solution",
-            description: "A robust and customizable customer relationship management tool to streamline business interactions, enhance customer engagement, and boost sales.",
+            title: "Student Management System",
+            description: "A system to manage student records, attendance, and grades.",
             image: project5,
-            link: "/projects/crm-solution",
+            link: "https://sms-172202922309.us-central1.run.app/",
         },
     ];
 
