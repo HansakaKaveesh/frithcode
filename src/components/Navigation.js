@@ -39,18 +39,21 @@ export default function Navigation() {
       `}
     >
       <div className="flex items-center px-4 lg:px-8 py-3 max-w-7xl mx-auto">
-        {/* Left: Logo */}
-        <div className="flex-1 flex items-center mt-1">
-          <Link href="/">
-            <Image
-              src="/singale logo.png"
-              alt="FrithCode Logo"
-              width={34}
-              height={34}
-              className="h-auto w-auto cursor-pointer"
-            />
-          </Link>
-        </div>
+{/* Left: Logo and Name */}
+<div className="flex-1 flex items-center mt-1">
+  <Link href="/" className="flex items-center gap-2">
+    <Image
+      src="/singale logo.png"
+      alt="FrithCode Logo"
+      width={34}
+      height={34}
+      className="h-auto w-auto cursor-pointer"
+    />
+    <span className="font-bold text-lg text-gray-800 dark:text-gray-100 tracking-tight">
+      FrithCode
+    </span>
+  </Link>
+</div>
 
         {/* Center: Desktop Menu */}
         <ul className="hidden md:flex gap-1 cursor-pointer flex-1 justify-center">

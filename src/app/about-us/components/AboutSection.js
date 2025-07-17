@@ -70,7 +70,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Stats Grid */}
+        {/* Stats Grid 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
           {[
             { icon: FiUsers, number: "200+", label: "Happy Clients" },
@@ -93,7 +93,7 @@ const AboutSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Core Values */}
         <div className="text-center">

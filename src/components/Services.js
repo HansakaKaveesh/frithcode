@@ -15,8 +15,20 @@ const WebDevelopmentServices = () => {
   }, []);
 
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <section
+      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden"
+      style={{
+        backgroundImage: `url('https://teamblume.com/wp-content/uploads/2022/05/Blume_PropTech_Business_Development_BG_17.jpg')`, // <-- Replace with your image path
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        zIndex: 0,
+      }}
+    >
+      {/* Overlay for better readability */}
+      <div className="absolute inset-0 bg-white/70 dark:bg-gray-900/70 pointer-events-none z-0" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16 space-y-6">
           <h2
             className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent"

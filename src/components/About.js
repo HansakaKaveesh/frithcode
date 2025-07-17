@@ -48,33 +48,6 @@ export default function About() {
                         </p>
                     </div>
 
-                    {/* Stats Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-up">
-                        <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                                    <FiBriefcase className="text-2xl text-blue-600 dark:text-blue-400" />
-                                </div>
-                                <div>
-                                    <span className="text-3xl font-bold text-gray-900 dark:text-white">4+</span>
-                                    <p className="mt-1 text-gray-600 dark:text-gray-400">Years Experience</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
-                                    <FiAward className="text-2xl text-purple-600 dark:text-purple-400" />
-                                </div>
-                                <div>
-                                    <span className="text-3xl font-bold text-gray-900 dark:text-white">150+</span>
-                                    <p className="mt-1 text-gray-600 dark:text-gray-400">Projects Completed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     {/* Values Section */}
                     <div className="space-y-6" data-aos="fade-up" data-aos-delay="200">
                         <div className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow">

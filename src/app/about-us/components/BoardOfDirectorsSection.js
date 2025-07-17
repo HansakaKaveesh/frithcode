@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
-import { FiLinkedin, FiTwitter, FiGlobe } from 'react-icons/fi';
+import { FiLinkedin} from 'react-icons/fi';
 
 const BoardOfDirectorsSection = () => {
   useEffect(() => {
@@ -29,29 +29,23 @@ const BoardOfDirectorsSection = () => {
               role: "Founder & CEO",
               image: "/madara.png",
               social: {
-                linkedin: "#",
-                twitter: "#",
-                website: "#"
+                linkedin: "https://www.linkedin.com/in/madhara-wedhage-741114334/",
               }
             },
             {
-              name: "Lakshima Kaushani",
-              role: "Director",
-              image: "/Lakshima.jpg",
+              name: "Hansaka Wijesinghe",
+              role: "Software Engineer",
+              image: "/Hansaka.jpg",
               social: {
-                linkedin: "#",
-                twitter: "#",
-                website: "#"
+                linkedin: "https://www.linkedin.com/in/hansaka-wijesinghe-285748142/",
               }
             },
             {
-              name: "Achini Wickramasinghe",
-              role: "Director",
-              image: "/Achini.jpg",
+              name: "Sanduni Wathsalya",
+              role: "Software Engineer",
+              image: "/Sanduni.jpg",
               social: {
-                linkedin: "#",
-                twitter: "#",
-                website: "#"
+                linkedin: "https://www.linkedin.com/in/sanduni-wathsalya-34aab92ba/",
               }
             }
           ].map((member, index) => (
@@ -88,18 +82,6 @@ const BoardOfDirectorsSection = () => {
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-gray-600 dark:text-gray-300 hover:text-cyan-600 transition-colors"
                   >
                     <FiLinkedin className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={member.social.twitter}
-                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-gray-600 dark:text-gray-300 hover:text-cyan-600 transition-colors"
-                  >
-                    <FiTwitter className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={member.social.website}
-                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-gray-600 dark:text-gray-300 hover:text-cyan-600 transition-colors"
-                  >
-                    <FiGlobe className="w-5 h-5" />
                   </a>
                 </div>
               </div>
