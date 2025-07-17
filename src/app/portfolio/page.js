@@ -1,47 +1,47 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FeaturedProjects from './FeaturedProjects';
-import Navigation from "../../components/Navigation";
+
 
 
 export default function PortfolioPage() {
   return (
     <main>
-<Navigation/>
-      {/* Hero Section */}
-<div className="relative bg-blue-800 text-white dark:bg-blue-900">
-  {/* Background Image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{
-      backgroundImage: 'url("/Aboutus.jpg")', // Adjust the image path accordingly
-    }}
-  ></div>
+ <div className="relative bg-blue-800 text-white dark:bg-blue-900 overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center scale-105"
+        style={{
+          backgroundImage: 'url("/Aboutus.jpg")',
+        }}
+      ></div>
 
-  {/* Blue Transparent Overlay */}
-  <div className="absolute inset-0 bg-blue-900 bg-opacity-50 dark:bg-opacity-70"></div>
+      {/* Blue Transparent Overlay */}
+      <div className="absolute inset-0 bg-blue-900/60 dark:bg-blue-950/70 backdrop-blur-sm"></div>
 
-  {/* Overlay Content */}
-  <div className="relative container mx-auto min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] py-24 sm:py-28 md:py-36 lg:py-60 text-center flex flex-col justify-center">
-    {/* Heading Animation */}
-    <h1 className="text-3xl md:text-4xl font-bold text-white dark:text-gray-100 opacity-0 animate-fadeInUp">
-      Our Portfolio
-    </h1>
-    
-    {/* Paragraph Animation */}
-    <p className="mt-4 text-lg opacity-0 animate-fadeInUp delay-200">
-      Explore our innovative web solutions for businesses across the globe.
-    </p>
+      {/* Overlay Content */}
+      <div className="relative z-10 container mx-auto flex flex-col justify-center items-center text-center px-6 min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] py-24 sm:py-28 md:py-36 lg:py-60">
+        {/* Heading Animation */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white dark:text-gray-100 opacity-0 animate-fadeInUp">
+          Our Portfolio
+        </h1>
 
-    {/* Breadcrumb Animation 
-    <p className="mt-4 text-base md:text-lg opacity-0 animate-fadeInUp delay-400">
-      <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
-        Home
-      </Link>{' '}
-      &gt; Portfolio
-    </p>*/}
-  </div>
-</div>
+        {/* Paragraph Animation */}
+        <p className="mt-6 text-lg md:text-xl lg:text-2xl max-w-3xl text-blue-100 opacity-0 animate-fadeInUp delay-200">
+          Explore our innovative web solutions for businesses across the globe.
+        </p>
+
+        {/* Breadcrumb Animation */}
+        
+        <p className="mt-4 text-base md:text-lg text-blue-200 opacity-0 animate-fadeInUp delay-400">
+          <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
+            Home
+          </Link>{" "}
+          &gt; <span className="text-blue-100">Portfolio</span>
+        </p>
+        
+      </div>
+    </div>
 
 
       {/* Featured Projects Section */}

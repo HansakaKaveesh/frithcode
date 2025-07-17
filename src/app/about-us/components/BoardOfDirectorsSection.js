@@ -26,7 +26,7 @@ const BoardOfDirectorsSection = () => {
     },
     {
       name: "Hansaka Wijesinghe",
-      role: "CTO",
+      role: "Chief Technical Officer",
       image: "/Hansaka.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/hansaka-wijesinghe-285748142/",
