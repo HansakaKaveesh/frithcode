@@ -26,10 +26,19 @@ const BoardOfDirectorsSection = () => {
     },
     {
       name: "Hansaka Wijesinghe",
-      role: "Software Engineer",
+      role: "CTO",
       image: "/Hansaka.jpg",
       social: {
         linkedin: "https://www.linkedin.com/in/hansaka-wijesinghe-285748142/",
+      }
+    },
+
+    {
+      name: "Sanduni Wathsalya",
+      role: "Senior Software Engineer",
+      image: "/Sanduni.jpg",
+      social: {
+        linkedin: "https://www.linkedin.com/in/sanduni-wathsalya-34aab92ba/",
       }
     },
     // Add more members as needed
@@ -44,7 +53,7 @@ const BoardOfDirectorsSection = () => {
 
         {/* Center the grid as a group */}
         <div className="flex justify-center">
-          <div className="inline-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="inline-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {members.map((member, index) => (
               <div 
                 key={index}
