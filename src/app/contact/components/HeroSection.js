@@ -14,9 +14,9 @@ const ContactHeroSection = () => {
     <section className="relative min-h-[60vh] flex items-center bg-blue-950 overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-[url('/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg')] bg-cover bg-center opacity-70 mt-12"
+        className="absolute inset-0 bg-[url('/woman-using-her-smartphone-while-home.jpg')] bg-cover bg-center opacity-70 "
         aria-label="Contact Us background"
-        style={{ backgroundAttachment: "fixed" }}
+   
       />
 
       {/* Overlay */}

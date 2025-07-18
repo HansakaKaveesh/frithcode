@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-[url('/glasses-lie-laptop-reflecting-light-from-screen-dark.jpg')] bg-cover bg-center opacity-70 mt-12 "
         aria-label="About Us background"
-        style={{ backgroundAttachment: "fixed" }}
+        
       />
 
       {/* Overlay */}

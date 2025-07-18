@@ -12,7 +12,7 @@ export default function PortfolioPage() {
       <div
         className="absolute inset-0 bg-[url('/man-using-laptop-night-top-view-web-banner-with-copy-space.jpg')] bg-cover bg-center opacity-70 mt-12"
         aria-label="Portfolio background"
-        style={{ backgroundAttachment: "fixed" }}
+        
       />
 
       {/* Overlay */}
