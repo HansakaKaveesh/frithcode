@@ -1,39 +1,58 @@
 "use client";
-import Link from "next/link";
 
-export default function HeroSection({ title, breadcrumb }) {
+import Link from "next/link";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const ContactHeroSection = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
-    <div className="relative bg-blue-800 text-white dark:bg-blue-900 overflow-hidden">
+    <section className="relative min-h-[60vh] flex items-center bg-blue-950 overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center scale-105 brightness-75"
-        style={{
-          backgroundImage: 'url("/Aboutus.jpg")',
-        }}
-      ></div>
+        className="absolute inset-0 bg-[url('/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg')] bg-cover bg-center opacity-70 mt-12"
+        aria-label="Contact Us background"
+        style={{ backgroundAttachment: "fixed" }}
+      />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-blue-950/60 dark:bg-blue-950/70 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-950/60 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] flex flex-col justify-center items-center text-center px-6 py-24 sm:py-28 md:py-36 lg:py-48">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white dark:text-gray-100 opacity-0 animate-fadeInUp">
-          {title}
-        </h1>
-        <p className="mt-4 text-lg sm:text-xl text-blue-100 opacity-0 animate-fadeInUp delay-200">
-          Feel free to reach out with any inquiries or feedback.
-        </p>
-
-        {/* Breadcrumb */}
-        {breadcrumb && (
-          <p className="mt-4 text-sm sm:text-base text-blue-200 opacity-0 animate-fadeInUp delay-400">
-            <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
-              Home
-            </Link>{" "}
-            &gt; <span>{breadcrumb}</span>
+      <div className="relative z-10 container mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:items-start">
+        <div
+          className="w-full md:w-2/3 lg:w-1/2"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Get in <span className="text-blue-300">Touch</span>
+          </h1>
+          <p className="text-lg md:text-xl text-blue-100 mb-8">
+            Have a project in mind or want to collaborate? Reach out and let’s build something great together.
           </p>
-        )}
+          <div className="flex gap-4">
+            <a
+              href="#contact-form"
+              className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition"
+            >
+              Contact Form
+            </a>
+            <Link
+              href="/"
+              className="inline-block bg-white/20 hover:bg-white/30 text-blue-100 font-semibold px-6 py-3 rounded-lg shadow transition border border-blue-300"
+            >
+              Back to Home
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default ContactHeroSection;

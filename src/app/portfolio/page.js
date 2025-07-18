@@ -7,41 +7,47 @@ import FeaturedProjects from './FeaturedProjects';
 export default function PortfolioPage() {
   return (
     <main>
- <div className="relative bg-blue-800 text-white dark:bg-blue-900 overflow-hidden">
+ <section className="relative min-h-[70vh] flex items-center bg-blue-950 overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{
-          backgroundImage: 'url("/Aboutus.jpg")',
-        }}
-      ></div>
+        className="absolute inset-0 bg-[url('/man-using-laptop-night-top-view-web-banner-with-copy-space.jpg')] bg-cover bg-center opacity-70 mt-12"
+        aria-label="Portfolio background"
+        style={{ backgroundAttachment: "fixed" }}
+      />
 
-      {/* Blue Transparent Overlay */}
-      <div className="absolute inset-0 bg-blue-900/60 dark:bg-blue-950/70 backdrop-blur-sm"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-950/60 to-transparent" />
 
-      {/* Overlay Content */}
-      <div className="relative z-10 container mx-auto flex flex-col justify-center items-center text-center px-6 min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] py-24 sm:py-28 md:py-36 lg:py-60">
-        {/* Heading Animation */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white dark:text-gray-100 opacity-0 animate-fadeInUp">
-          Our Portfolio
-        </h1>
-
-        {/* Paragraph Animation */}
-        <p className="mt-6 text-lg md:text-xl lg:text-2xl max-w-3xl text-blue-100 opacity-0 animate-fadeInUp delay-200">
-          Explore our innovative web solutions for businesses across the globe.
-        </p>
-
-        {/* Breadcrumb Animation */}
-        
-        <p className="mt-4 text-base md:text-lg text-blue-200 opacity-0 animate-fadeInUp delay-400">
-          <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
-            Home
-          </Link>{" "}
-          &gt; <span className="text-blue-100">Portfolio</span>
-        </p>
-        
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:items-start">
+        <div
+          className="w-full md:w-2/3 lg:w-1/2"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Explore My <span className="text-blue-300">Portfolio</span>
+          </h1>
+          <p className="text-lg md:text-xl text-blue-100 mb-8">
+            A showcase of my best work in web development, design, and digital solutions. Dive in to see how I turn ideas into impactful digital experiences.
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="/projects"
+              className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition"
+            >
+              View Projects
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-block bg-white/20 hover:bg-white/30 text-blue-100 font-semibold px-6 py-3 rounded-lg shadow transition border border-blue-300"
+            >
+              Hire Me
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
 
       {/* Featured Projects Section */}
