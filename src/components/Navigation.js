@@ -231,7 +231,7 @@ export default function Navigation() {
                     className={`text-lg transition-transform duration-300 ${openMobileDropdown === idx ? 'rotate-90' : ''}`}
                   />
                 </div>
-                <div className={`overflow-hidden transition-all duration-300 ${openMobileDropdown === idx ? 'max-h-40' : 'max-h-0'}`}>
+                <div className={`overflow-hidden transition-all duration-300 ${openMobileDropdown === idx ? 'max-h-45' : 'max-h-0'}`}>
                   <ul className="ml-8 pl-3 border-l-2 border-blue-100 dark:border-gray-700 space-y-2">
                     {link.dropdown.map((sublink) => (
                       <li key={sublink.label}>
