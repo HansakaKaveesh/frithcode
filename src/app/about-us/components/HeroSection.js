@@ -11,48 +11,40 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative bg-blue-800 text-white dark:bg-blue-900 overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center bg-blue-950 overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed scale-105 brightness-75"
-        style={{ backgroundImage: 'url("/Aboutus.jpg")' }}
-        role="img"
-        aria-label="Background image showcasing About Us section"
-      ></div>
+        className="absolute inset-0 bg-[url('/glasses-lie-laptop-reflecting-light-from-screen-dark.jpg')] bg-cover bg-center opacity-70 mt-12 "
+        aria-label="About Us background"
+      />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 via-blue-950/60 to-black/70 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-950/60 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto min-h-[60vh] lg:min-h-[90vh] flex flex-col justify-center items-center text-center px-6 py-24">
-        <h1
-          className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white dark:text-gray-100"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          Story of FrithCode Technologies
-        </h1>
-        <p
-          className="mt-6 text-lg md:text-xl lg:text-2xl max-w-3xl text-blue-100"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          Explore our innovative web solutions for businesses across the globe.
-        </p>
-
-        {/* Breadcrumb */}
+      <div className="relative z-10 container mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:items-start">
         <div
-          className="mt-6 text-sm md:text-base text-blue-200"
-          data-aos="fade-up"
-          data-aos-delay="500"
+          className="w-full md:w-2/3 lg:w-1/2"
+          data-aos="fade-right"
+          data-aos-delay="200"
         >
-          <Link href="/" className="text-blue-300 hover:underline dark:text-blue-400">
-            Home
-          </Link>{" "}
-          &gt; <span className="font-medium text-blue-100">About Us</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Discover the <span className="text-blue-300">FrithCode</span> Story
+          </h1>
+          <p className="text-lg md:text-xl text-blue-100 mb-8">
+            We build innovative web solutions for businesses worldwide. Let’s create something amazing together.
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="/contact"
+              className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition"
+            >
+              Get in Touch
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
