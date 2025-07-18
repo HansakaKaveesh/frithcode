@@ -86,6 +86,8 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // --- No need for router.events, just use onClick on Link for mobile ---
+
   return (
     <nav
       className={`
@@ -237,6 +239,10 @@ export default function Navigation() {
                       <li key={sublink.label}>
                         <Link
                           href={sublink.href}
+                          onClick={() => {
+                            setIsOpen(false);
+                            setOpenMobileDropdown(null);
+                          }}
                           className="flex items-center gap-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors duration-200"
                         >
                           <sublink.icon className="text-blue-500 dark:text-blue-400" />
@@ -251,6 +257,10 @@ export default function Navigation() {
               <li className="w-full px-4 group" key={link.label}>
                 <Link
                   href={link.href}
+                  onClick={() => {
+                    setIsOpen(false);
+                    setOpenMobileDropdown(null);
+                  }}
                   className="flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-xl transition-all duration-300 hover:bg-blue-50/50 dark:hover:bg-blue-900/20"
                 >
                   <link.icon className="text-xl text-blue-600 dark:text-blue-400 opacity-80" />
@@ -262,6 +272,10 @@ export default function Navigation() {
           <li className="w-full px-4 mt-2">
             <Link
               href="/quotation"
+              onClick={() => {
+                setIsOpen(false);
+                setOpenMobileDropdown(null);
+              }}
               className="block mx-4 px-6 py-3 text-center font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all duration-300 hover:scale-[1.02] active:scale-95"
             >
               Request Quotation
