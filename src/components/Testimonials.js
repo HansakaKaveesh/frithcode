@@ -42,8 +42,17 @@ export default function Testimonials() {
     ];
 
     return (
-        <section className="py-20 px-6 lg:px-8 bg-white dark:bg-gray-900">
-            <div className="max-w-7xl mx-auto">
+        <section
+            className="relative py-20 px-6 lg:px-8 bg-cover bg-center"
+            style={{
+                backgroundImage: "url('/user-people-network-circuit-board-link-connection-technology.jpg')", // <-- Change to your image path
+                backgroundAttachment: "fixed",
+            }}
+        >
+            {/* Overlay for readability */}
+            <div className="absolute inset-0 bg-white/80 dark:bg-gray-900/80 pointer-events-none" />
+
+            <div className="relative max-w-7xl mx-auto">
                 <div className="text-center mb-16" data-aos="fade-down">
                     <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Client Success Stories
