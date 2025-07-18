@@ -33,7 +33,7 @@ const AboutSection = () => {
           {/* Image Section */}
           <div 
             className="relative h-96 rounded-2xl overflow-hidden group"
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             <Image
               src="/Analytic.jpg"
@@ -50,7 +50,7 @@ const AboutSection = () => {
           </div>
 
           {/* Text Content */}
-          <div className="space-y-6" data-aos="fade-left">
+          <div className="space-y-6" data-aos="fade-up">
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               At <span className="font-semibold text-blue-600 dark:text-blue-400">FrithCode</span>, 
               we combine technical expertise with creative vision to deliver exceptional 

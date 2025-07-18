@@ -36,7 +36,7 @@ const VisionMissionSection = () => {
           {/* Vision Card */}
           <div 
             className="group relative bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300"
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent dark:from-blue-900/20 rounded-3xl" />
             <div className="relative">
@@ -63,7 +63,7 @@ const VisionMissionSection = () => {
           {/* Mission Card */}
           <div 
             className="group relative bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="150"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 to-transparent dark:from-cyan-900/20 rounded-3xl" />
