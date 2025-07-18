@@ -6,12 +6,12 @@ export default function ThemeToggle({ className = "" }) {
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
-    if (theme === "dark" || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add("dark");
-      setIsDarkMode(true);
-    } else {
+    if (theme === "light") {
       document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
+    } else {
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
     }
   }, []);
 
@@ -19,11 +19,12 @@ export default function ThemeToggle({ className = "" }) {
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
+      setIsDarkMode(false);
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
     }
-    setIsDarkMode(!isDarkMode);
   };
 
   return (
