@@ -3,7 +3,7 @@ import HeroSection from './components/HeroSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import OurServices from './components/OurServices';
 import ContactCTA from './components/ContactCTA';
-
+import ClientWorks from './components/ClientWorks';
 
 const WebDevelopment = () => {
   return (
@@ -14,6 +14,7 @@ const WebDevelopment = () => {
       <HeroSection />
       <WhyChooseUs />
       <OurServices />
+      <ClientWorks />
       <ContactCTA />
     </div>
     </div>

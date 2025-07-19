@@ -1,11 +1,28 @@
-// src/components/WhyChooseUs.js
 "use client"
 import { useEffect } from 'react';
-import { FaPaintBrush, FaShieldAlt, FaHeadset } from 'react-icons/fa';
+import { FiCode, FiServer, FiSmartphone } from 'react-icons/fi';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const WhyChooseUs = () => {
+const services = [
+  {
+    icon: <FiCode size={36} />,
+    title: "Front-End Development",
+    description: "Build interactive, responsive interfaces using React, Next.js, and modern frameworks for a seamless user experience."
+  },
+  {
+    icon: <FiServer size={36} />,
+    title: "Back-End Development",
+    description: "Develop robust, scalable server-side logic and APIs to power your applications and ensure optimal performance."
+  },
+  {
+    icon: <FiSmartphone size={36} />,
+    title: "Mobile-Ready Design",
+    description: "Deliver mobile-first, cross-device web solutions that look and work great on any screen size."
+  }
+];
+
+const WebDevelopmentServices = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -14,66 +31,65 @@ const WhyChooseUs = () => {
     });
   }, []);
 
-  const features = [
-    { 
-      icon: <FaPaintBrush className="text-blue-600 dark:text-blue-400" size={40} />, 
-      title: "Custom Design", 
-      description: "Tailored website designs that reflect your unique brand and goals, making your online presence truly stand out." 
-    },
-    { 
-      icon: <FaShieldAlt className="text-blue-600 dark:text-blue-400" size={40} />, 
-      title: "Secure & Fast", 
-      description: "Our websites are highly optimized, secure, and provide a seamless user experience, ensuring both speed and safety." 
-    },
-    { 
-      icon: <FaHeadset className="text-blue-600 dark:text-blue-400" size={40} />, 
-      title: "Ongoing Support", 
-      description: "We provide reliable support to ensure your website remains up-to-date and performs optimally at all times." 
-    }
-  ];
-
   return (
-    <section className="relative py-20 px-8 bg-gradient-to-br from-blue-50/50 to-purple-50/50 dark:from-gray-900 dark:to-gray-900 overflow-hidden">
-      <div className="absolute -top-20 -right-20 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl dark:bg-blue-900/20" />
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl dark:bg-purple-900/20" />
+    <section
+      className="relative py-16 px-4 sm:px-8 bg-gray-50 dark:bg-gray-900 overflow-hidden"
+      aria-labelledby="web-dev-services-heading"
+    >
+      {/* Decorative SVG */}
+      <svg
+        className="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[900px] opacity-10 dark:opacity-5 pointer-events-none z-0"
+        viewBox="0 0 900 900"
+        fill="none"
+        aria-hidden="true"
+      >
+        <circle cx="450" cy="450" r="450" fill="url(#paint0_radial_webdev)" />
+        <defs>
+          <radialGradient
+            id="paint0_radial_webdev"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="translate(450 450) scale(450)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#6366F1" />
+            <stop offset="1" stopColor="#A5B4FC" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+      </svg>
 
-      <div className="max-w-7xl mx-auto">
-        <h2 
-          className="text-5xl font-bold text-center mb-16 relative"
-          data-aos="zoom-in"
+      <div className="relative max-w-6xl mx-auto z-10">
+        <h2
+          id="web-dev-services-heading"
+          className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-700 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400"
         >
-          <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400">
-            Why Choose Us?
-          </span>
-          <span className="absolute -bottom-4 left-1/2 w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 -translate-x-1/2 rounded-full dark:from-blue-400 dark:to-purple-400" />
+          Web Development Services
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((item, index) => (
-            <div
-              key={index}
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {services.map((item, index) => (
+            <article
+              key={item.title}
+              tabIndex={0}
+              aria-label={item.title}
               data-aos="fade-up"
-              data-aos-delay={`${index * 150}`}
-              className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-xl dark:shadow-gray-900/20"
+              data-aos-delay={index * 150}
+              className="group relative text-center bg-white/90 dark:bg-gray-800/90 shadow-lg hover:shadow-2xl rounded-xl p-8 transition-all duration-300 transform hover:-translate-y-2 focus-within:ring-2 focus-within:ring-blue-400 outline-none border border-transparent"
             >
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
-              
-              {/* Updated icon container */}
-              <div className="inline-flex items-center justify-center p-4 bg-blue-50 rounded-2xl mb-6 transition-all duration-300 group-hover:rotate-6 dark:bg-gray-700">
-                <span className="text-blue-600 dark:text-blue-400">
-                  {item.icon}
-                </span>
-              </div>
+              {/* Animated gradient border */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 via-purple-400/10 to-blue-400/10 rounded-xl opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 dark:from-blue-400 dark:to-purple-400">
+              {/* Icon with animated background */}
+              <div className="mx-auto flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 group-hover:scale-110 group-focus-within:scale-110 transition-transform duration-300 shadow mb-6">
+                <span className="text-blue-600 dark:text-blue-300">{item.icon}</span>
+              </div>
+              <h3 className="text-2xl font-semibold mt-2 text-blue-700 dark:text-blue-300">
                 {item.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed transition-colors duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-300">
+              <p className="mt-4 text-gray-700 dark:text-gray-300">
                 {item.description}
               </p>
-
-              <div className="absolute bottom-0 left-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500 group-hover:w-3/4 group-hover:-translate-x-1/2" />
-            </div>
+            </article>
           ))}
         </div>
       </div>
@@ -81,4 +97,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default WebDevelopmentServices;
