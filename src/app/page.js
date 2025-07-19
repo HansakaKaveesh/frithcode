@@ -4,18 +4,19 @@ import About from "../components/About";
 import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
 import Testimonials from "../components/Testimonials"
-import Navigation from "../components/Navigation";
+import WeUseTechnology from "@/components/WeUseTechnology";
+
 
 
 export default function HomePage() {
     return (
         <div>
             <Hero />
-            <Navigation/>
             <About />
             <Services />
             <Portfolio />
             <Testimonials/>
+            <WeUseTechnology />
             
         </div>
     );
