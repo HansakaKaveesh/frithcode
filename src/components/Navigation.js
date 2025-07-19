@@ -93,7 +93,7 @@ export default function Navigation() {
       className={`
         fixed top-0 left-0 right-0 z-50 border-b border-gray-100 dark:border-gray-800
         transition-all duration-300
-        ${scrolled ? "bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-md" : "bg-white/95 dark:bg-gray-900/95 backdrop-blur-none shadow-sm"}
+        ${scrolled ? "bg-white/70 dark:bg-gray-900/60 backdrop-blur-md shadow-md" : "bg-white/95 dark:bg-gray-900/95 backdrop-blur-none shadow-sm"}
       `}
     >
       <div className="flex items-center px-4 lg:px-8 py-3 max-w-7xl mx-auto">
